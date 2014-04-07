@@ -1,70 +1,49 @@
 *
 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-html, body, .Override, .Override .col-md-4, .Override .col-md-8
+html, body
 {
-    height: 100%;
-    color: white;
+  height: 100%;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 a:focus {
   outline: none !important;
 }
 
-.Override .wrapper
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.Override .col-md-4
-{
-    background-color: #285EA8;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-}
-
-.Override .col-md-8
-{
-    background-color: #20467A;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-}
-
-.row {
-    margin: 0 !important;
-}
-
-h1, h2, h3, h4, h5, h6, li {
-    font-family: 'Montserrat', sans-serif !important;
+.sidepanel {
+  background-color: #285EA8;
+  width: 25em;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding: 0 45px;
+  padding-bottom: 10px;
 }
 
 .label-blue {
-    background-color: #4679BD; 
+  background-color: #4679BD;
 }
 
 #face-wrapper .face {
-    margin-bottom: 10px;
-}
-
-.sidepanel {
-    width: 100%;
-    margin-top: 40px;
-    text-align: center;
-    padding: 0 45px;
-    padding-bottom: 10px;
-    position: relative;
-    z-index: 1;
+  margin-bottom: 10px;
 }
 
 .sidepanel h1 {
   margin-bottom: 0;
+  color: #fff;
 }
 
 .sidepanel h5 {
@@ -73,7 +52,7 @@ h1, h2, h3, h4, h5, h6, li {
 }
 
 .sidepanel .tags {
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 .contact-links {
@@ -91,7 +70,7 @@ h1, h2, h3, h4, h5, h6, li {
 
 .triangle {
     width: 100%;
-    height: 0;    
+    height: 0;
     padding-left:50%;
     padding-bottom: 50%;
     overflow: hidden;
@@ -114,6 +93,21 @@ h1, h2, h3, h4, h5, h6, li {
     color: #333;
 }
 
+main {
+  width: calc(100% - 25em);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  background-color: #20467A;
+}
+
+main h1 {
+  color: #fff;
+}
 .section {
   height: calc(100% / 3);
   position: relative;
@@ -135,7 +129,7 @@ h1, h2, h3, h4, h5, h6, li {
   z-index: 1;
 }
 
-.col-md-8.hover-on .section:hover {
+.section:hover {
   background-color: #20467A;
 }
 
@@ -227,7 +221,7 @@ a.back-arrow:hover {
 .carousel-inner .item {
   text-align: center;
   height: 100%;
-  
+
 }
 
 .carousel-inner>.item>img {
