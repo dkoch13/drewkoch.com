@@ -95,19 +95,19 @@ $(document).ready(function(){
 $(document).bind('keyup', function(e) {
   if(e.keyCode==39 && location.hash === "#farmplicity"){
   $('.goods-1 a.carousel-control.right').trigger('click');
-  }   
+  }
   else if(e.keyCode==37){
   $('.goods-1 a.carousel-control.left').trigger('click');
   }
   if(e.keyCode==39 && location.hash === "#pantastic"){
   $('.goods-2 a.carousel-control.right').trigger('click');
-  }   
+  }
   else if(e.keyCode==37){
   $('.goods-2 a.carousel-control.left').trigger('click');
   }
   if(e.keyCode==39 && location.hash === "#other-work"){
   $('.goods-3 a.carousel-control.right').trigger('click');
-  }   
+  }
   else if(e.keyCode==37){
   $('.goods-3 a.carousel-control.left').trigger('click');
   }
@@ -118,8 +118,9 @@ $(document).ready(function(){
     $('#tooltip1').tooltip();
     $('#tooltip2').tooltip();
     $('#tooltip3').tooltip();
+    $('#tooltip4').tooltip();
 });
 
-$(function () { 
+$(function () {
   $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
 

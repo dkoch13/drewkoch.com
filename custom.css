@@ -14,11 +14,17 @@ h1, h2, h3, h4, h5, h6, li {
   font-family: 'Montserrat', sans-serif !important;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #428bca;
+  opacity: 0.8;
+}
+
 a:focus {
   outline: none !important;
 }
 
-.sidepanel {
+nav {
   background-color: #285EA8;
   width: 25em;
   height: 100%;
@@ -26,37 +32,53 @@ a:focus {
   top: 0;
   left: 0;
   overflow: hidden;
-  padding: 0;
   margin: 0;
   text-align: center;
-  padding: 0 45px;
-  padding-bottom: 10px;
+  padding: 30px 0px;
 }
 
 .label-blue {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
   background-color: #4679BD;
 }
 
-#face-wrapper .face {
+.face {
   margin-bottom: 10px;
 }
 
-.sidepanel h1 {
+nav h1 {
+  margin-top: 25px;
   margin-bottom: 0;
   color: #fff;
 }
 
-.sidepanel h5 {
+nav h2 {
   color: #C9C9C9;
   margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
-.sidepanel .tags {
+.tags {
   margin-top: 30px;
+  padding: 30px;
 }
 
 .contact-links {
-  margin-top: 40px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
 }
 
 .contact-links i {
@@ -109,8 +131,12 @@ main h1 {
   color: #fff;
 }
 .section {
-  height: calc(100% / 3);
+  height: 32%;
   position: relative;
+}
+
+.section:hover {
+  opacity: 0.9;
 }
 
 .section span.content {
@@ -127,10 +153,6 @@ main h1 {
   top: 0;
   left: 0;
   z-index: 1;
-}
-
-.section:hover {
-  background-color: #20467A;
 }
 
 .section span .centerful {
@@ -153,19 +175,23 @@ main h1 {
 }
 
 .section-1 {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.15);
   display: block;
 }
 
 .section-2 {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.3);
   display: block;
 }
 
 .section-3 {
+  background-color: rgba(0,0,0,0.45);
+  display: block;
+}
+
+.section-4 {
   background-color: rgba(0,0,0,0.6);
   display: block;
-  height: 34%;
 }
 
 .back-arrow {
@@ -181,8 +207,8 @@ a.back-arrow:hover {
 }
 
 .goods {
-  height: calc(100% - 115px);
-  position: relative;
+  height: 100%;
+  position: absolute;
   width: 100%;
   display: none;
   text-align: center;
