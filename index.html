@@ -1,458 +1,58 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Drew Koch</title>
-  <meta name="Resource-type" content="Document" />
-  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="custom.css" />
-  <link rel="stylesheet" href="animate.css">
-  <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-  <!--[if IE]>
-    <script type="text/javascript">
-       var console = { log: function() {} };
-    </script>
-  <![endif]-->
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <script src="jqBootstrapValidation.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="custom.js"></script>
-</head>
-<body>
-
-  <nav>
-      <img src="images/drew.jpg" class="img-circle face" height="125">
-      <h1>DREW KOCH</h1>
-      <h2>UI/UX Designer<br>Co-founder at <a href="https://www.farmplicity.com" target="_blank">Farmplicity</a></h2>
-      <!-- <div class="tags">
-        <span class="label-blue">HTML5</span>
-        <span class="label-blue">CSS3</span>
-        <span class="label-blue">Javascript</span>
-        <span class="label-blue">jQuery</span>
-        <span class="label-blue">Photoshop</span>
-        <span class="label-blue">Git</span>
-        <span class="label-blue">Github</span>
-        <span class="label-blue">Bootstrap</span>
-        <span class="label-blue">Wireframing</span>
-        <span class="label-blue">Email Marketing</span>
-        <span class="label-blue">Brand development</span>
-        <span class="label-blue">Strategy</span>
-      </div> -->
-      <div class="contact-links">
-        <a href="https://twitter.com/drewbkoch" target="_blank"><i id="tooltip1" data-toggle="tooltip" data-placement="top" data-original-title="Tweet me!" data-trigger="hover" class="fa fa-twitter fa-2x"></i></a>
-        <a href="https://github.com/drewbkoch" target="_blank"><i id="tooltip2" data-toggle="tooltip" data-placement="top" data-original-title="Check out my projects" data-trigger="hover" class="fa fa-github fa-2x"></i></a>
-        <a href="http://www.linkedin.com/in/drewbkoch/" target="_blank"><i id="tooltip3" data-toggle="tooltip" data-placement="top" data-original-title="LinkedIn me?" data-trigger="hover" class="fa fa-linkedin fa-2x"></i></a>
-        <a data-toggle="modal" data-target="#email"><i id="tooltip4" data-toggle="tooltip" data-placement="top" data-original-title="Message me!" data-trigger="hover" class="fa fa-envelope fa-2x"></i></a>
-      </div>
-      <div class="triangle"></div>
-    </nav>
-
-    <main class="hover-on">
-
-      <a href="#" class="back-arrow"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a>
-
-      <div class="section section-1">
-        <span class="content">
-          <div class="centerful">
-            <h1>Farmplicity</h1>
-            <h3>Online marketplace for local food</h3>
-            <h4><a href="#" class="see-work see-work-1">See work <i class="fa fa-angle-right"></i></a></h4>
-          </div>
-        </span>
-        <a class="button-1" href="#farmplicity"><span class="div-link div-link-1"></span></a>
-      </div>
-      <div class="section section-2">
-        <span class="content">
-          <div class="centerful">
-            <h1>Pantastic</h1>
-            <h3>Print iPhone panoramas instantly</h3>
-            <h4><a href="#" class="see-work see-work-2">See work <i class="fa fa-angle-right"></i></a></h4>
-          </div>
-        </span>
-        <a class="button-2" href="#pantastic"><span class="div-link div-link-2"></span></a>
-      </div>
-      <div class="section section-3">
-        <span class="content">
-          <div class="centerful">
-            <h1>Other Work</h1>
-            <h4><a href="#" class="see-work see-work-3">See work <i class="fa fa-angle-right"></i></a></h4>
-          </div>
-        </span>
-        <a class="button-3" href="#other-work"><span class="div-link div-link-3"></span></a>
-      </div>
-      <div class="section section-4">
-        <span class="content">
-          <div class="centerful">
-            <h1>Pantastic</h1>
-            <h3>Print iPhone panoramas instantly</h3>
-            <h4><a href="#" class="see-work see-work-2">See work <i class="fa fa-angle-right"></i></a></h4>
-          </div>
-        </span>
-        <a class="button-2" href="#pantastic"><span class="div-link div-link-2"></span></a>
-      </div>
-
-      <div class="goods goods-1">
-
-        <div class="info-bar info-bar-1">
-          <ul>
-            <a href="https://www.farmplicity.com" target="_blank"><li><i class="fa fa-link"></i> www.farmplicity.com</li></a>
-            <a href="http://www.fastcompany.com/3020337/with-farmplicity-the-farm-to-table-movement-meets-the-21st-century" target="_blank"><li><i class="fa fa-bullhorn"></i> Fast Company</li></a>
-            <li><i class="fa fa-check"></i> Active</li>
-            <li><i class="fa fa-clock-o"></i> Jan 2013 - Present</li>
-          </ul>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+      <header>
+        <div class="greeting">
+          <img src="img/headshot.jpg" alt="photo of my head">
+          <h1>Hey there! I'm Drew.</h1>
+          <h2>I'm a designer and front-end developer that enjoys building stuff.</h2>
         </div>
+        <nav>
+          <button id="scroll">Check out my stuff!</button>
+        </nav>
+      </header>
+      <main>
+        <section class="farmplicity">
+          <h1>Project: Farmplicity</h1>
+          <h2>Title: Co-founder/CEO/Head of Product</h2>
+          <h3>Technology: <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">jQuery</span><span class="tag">Twitter Bootstrap</span><span class="tag">Ruby on Rails</span></h3>
+          <p>Farmplicity is an online marketplace where farmers can sell local ingredients directly to chefs in an easy-to-use virtual farmers market. Farmplicity was founded in January 2013 with the intention of making local ingredients easier to access, thus benefiting local economies and, over time, reducing prices. To date, over 100 farmers and 100 chefs have utilized Farmplicity in the St. Louis market.</p>
 
-        <div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="false">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-1" data-slide-to="1"></li>
-            <li data-target="#carousel-1" data-slide-to="2"></li>
-            <li data-target="#carousel-1" data-slide-to="3"></li>
-            <li data-target="#carousel-1" data-slide-to="4"></li>
-            <li data-target="#carousel-1" data-slide-to="5"></li>
-            <li data-target="#carousel-1" data-slide-to="5"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="images/farmplicity-homepagev2.png">
-              <div class="carousel-caption">
-                <h5>Farmplicity Homepage v2.0</h5>
-              </div>
-            </div>
-            <div class="item">
-              <img src="images/farmplicity-listings.png">
-              <div class="carousel-caption">
-                <h5>Farmplicity Marketplace</h5>
-              </div>
-            </div>
-            <div class="item">
-              <img src="images/farmplicity-product.png">
-              <div class="carousel-caption">
-                <h5>Farmplicity Product Page</h5>
-              </div>
-            </div>
-            <div class="item">
-              <img src="images/farmplicity-profile.png">
-              <div class="carousel-caption">
-                <h5>Farmplicity Farmer Profile Page</h5>
-              </div>
-            </div>
-            <div class="item">
-              <img src="images/farmplicity-logo.jpg">
-              <div class="carousel-caption">
-                <h5>Farmplicity Logo</h5>
-              </div>
-            </div>
-            <div class="item">
-              <img src="images/farmplicity-brag-sheet.jpg">
-              <div class="carousel-caption">
-                <h5>Farmplicity Infographic</h5>
-              </div>
-            </div>
-            <div class="item">
-              <img src="images/stacked-burger-4x6.jpg">
-              <div class="carousel-caption">
-                <h5>Stacked Burger Table Card</h5>
-              </div>
-            </div>
-
+          <div class="browser image" data-url="http://www.farmplicity.com">
+            <img src="img/farmplicity-homepage.jpg" alt="screenshot 1">
           </div>
-
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-1" data-slide="prev">
-            <i class="fa fa-chevron-left"></i>
-          </a>
-          <a class="right carousel-control" href="#carousel-1" data-slide="next">
-            <i class="fa fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="goods goods-2">
-
-        <div class="info-bar info-bar-2">
-          <ul>
-            <a href="http://www.pantastic.co" target="_blank"><li><i class="fa fa-link"></i> pantastic.co</li></a>
-            <li><i class="fa fa-times"></i> Retired</li>
-            <li><i class="fa fa-clock-o"></i> Dec 2012 - Mar 2013</li>
-          </ul>
-        </div>
-
-        <div id="carousel-2" class="carousel slide" data-ride="carousel" data-interval="false">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-2" data-slide-to="1"></li>
-            <li data-target="#carousel-2" data-slide-to="2"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="images/pantastic-homepage.png">
-              <div class="carousel-caption">
-                <h5>Pantastic Homepage</h5>
-              </div>
-            </div>
-            <div class="item">
-              <img src="images/pantastic-logo.jpg">
-              <div class="carousel-caption">
-                <h5>Pantastic Logo</h5>
-              </div>
-            </div>
-            <div class="item">
-              <img src="images/pantastic-mailer.jpg">
-              <div class="carousel-caption">
-                <h5>Pantastic Mail Stuffer</h5>
-              </div>
-            </div>
+          <div class="browser image" data-url="http://www.farmplicity.com">
+            <img src="img/farmplicity-homepage.jpg" alt="screenshot 1">
           </div>
-
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-2" data-slide="prev">
-            <i class="fa fa-chevron-left"></i>
-          </a>
-          <a class="right carousel-control" href="#carousel-2" data-slide="next">
-            <i class="fa fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="goods goods-3">
-        <div id="carousel-3" class="carousel slide" data-ride="carousel" data-interval="false">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-3" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-3" data-slide-to="1"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="images/dontsackme.png">
-              <div class="carousel-caption extra-padding">
-                <h5><a href="http://dontsackme.com"><i class="fa fa-link"></i> dontsackme.com</a> - English Premier League Manager Tenure Tracker</h5>
-              </div>
-            </div>
-            <div class="item">
-              <img src="images/elton-john-album.jpg">
-              <div class="carousel-caption">
-                <h5>Elton John Album Cover Redesign</h5>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-3" data-slide="prev">
-            <i class="fa fa-chevron-left"></i>
-          </a>
-          <a class="right carousel-control" href="#carousel-3" data-slide="next">
-            <i class="fa fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-    </main>
+        </section>
+      </main>
 
 
-<!-- Modal -->
-<div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="email" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Contact Me</h4>
-      </div>
-        <!-- www.123contactform.com script begins here -->
 
-        <script type="text/javascript">
-        <!--
-        var formrules=new Array(0);
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
-        //-->
-        </script>
-        <script type="text/javascript">
-        var cfJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
-        document.write(unescape("%3Cscript src='" + cfJsHost + "dflzqrzibliy5.cloudfront.net/includes/interactive123cf.js?4704' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-
-        <script type="text/javascript">
-        <!--
-        var selectedfield='';
-        var multiPageCurent=1;
-        var multiPageTotal=1;
-        function InputActions(field,id) {
-          var textcolor='#000000';
-          var hltextcolor='#000000';
-
-          if (id==selectedfield) { /* alert('do nothing'); */ }
-          else
-            {
-            // first we unhighlight the previous field, if any
-            if (selectedfield!='')
-              {
-              lid=selectedfield;
-              lidsec=lid.replace('row','rowsec');
-
-              // reparam culoare textlabels
-              var tr=document.getElementById(lid);
-
-              if (document.getElementsByClassName)
-                {
-              var textlabels = tr.getElementsByClassName('class123-label');
-              for (j=0;j<textlabels.length;j++)
-                textlabels[j].style.color=textcolor;
-                }
-                else
-                {
-                var textlabels=tr.getElementsByTagName('label');
-                for (j=0;j<textlabels.length;j++)
-                  if (textlabels[j].className.indexOf('class123-label')>-1) textlabels[j].style.color=textcolor;
-                }
-              var oldbg='';
-              if (document.getElementById('errorflag'+lid)!=null)
-                oldbg=document.getElementById('errorflag'+lid).value;
-
-              // reparam culoare bg td
-              var tds = tr.getElementsByTagName('div');
-              for (j=0;j<tds.length;j++)
-                tds[j].parentNode.parentNode.style.background=oldbg;
-
-              // reparam culoare bg td sec
-              if (document.getElementById(lidsec) != null)
-                {
-                var trsec=document.getElementById(lidsec);
-                tds = trsec.getElementsByTagName('div');
-                for (j=0;j<tds.length;j++)
-                  tds[j].parentNode.parentNode.style.background=oldbg;
-                }
-              }
-            // then we highlight the new one
-            selectedfield=id;
-
-            lid=id;
-            lidsec=lid.replace('row','rowsec');
-
-            // modificam culoare textlabels
-            var tr=document.getElementById(lid);
-            if (document.getElementsByClassName)
-              {
-            var textlabels = tr.getElementsByClassName('class123-label');
-            for (j=0;j<textlabels.length;j++)
-              textlabels[j].style.color=hltextcolor;
-              }
-              else
-              {
-              var textlabels=tr.getElementsByTagName('label');
-              for (j=0;j<textlabels.length;j++)
-                if (textlabels[j].className.indexOf('class123-label')>-1) textlabels[j].style.color=hltextcolor;
-              }
-
-          // now the field rules
-
-          InputRules2('beginning','0');
-        }
-        //IB: functie utila pt cand vrem sa introducem virgula de formatare la price
-        // function addDecimalPoints(inputElement) {
-          // inputElement.value=inputElement.value.replace(/\D/g, '');
-          // var inputValue = inputElement.value.replace(',', '').split('').reverse().join(''); // reverse
-          // var newValue = '';
-          // for (var i = 0; i < inputValue.length; i++) {
-            // if (i % 3 == 0) {
-              // newValue += ',';
-            // }
-            // newValue += inputValue[i];
-          // }
-          // newValue = newValue.split('').reverse().join('');
-          // inputElement.value = newValue.substr(0, newValue.length-1);
-        // }
-
-        function IsFullDateEntered(c_id) {
-        if((document.getElementById('id123-control'+c_id+'-1') != null)&&(document.getElementById('id123-control'+c_id+'-2')!=null)&&(document.getElementById('id123-control'+c_id+'-3')!=null))
-          {
-          if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.getElementById('id123-control'+c_id+'-2').value!='')&&(document.getElementById('id123-control'+c_id+'-3').value!=''))
-            document.getElementById('id123-control'+c_id).value=document.getElementById('id123-control'+c_id+'-1').value+'/'+document.getElementById('id123-control'+c_id+'-2').value+'/'+document.getElementById('id123-control'+c_id+'-3').value;
-          }
-        }
-        //-->
-        </script>
-
-        <div class="modal-body">
-
-          <form role="form" class="form" onsubmit="RefreshFrameHeight(1); return checkSubmitAllowed();" action="http://www.123contactform.com/form-773001/Contact-Lead-Form" id="mainform123" method="post" name="mainform123" enctype="multipart/form-data">
-
-          <input type="hidden" name="action" value="verify"/><input type="hidden" name="special_autoresponder" id="special_autoresponder" value=""/><input type="hidden" name="language" value="en"/><input type="hidden" name="languageChanged" value="no"/>
-
-
-          <!-- fieldcontainer -->
-          <div class="form-group">
-          <input type="hidden" id="errorflagrow1" value=""/><input placeholder="Full Name" class="form-control" id="id123-control6033860" name="control6033860"  onclick="InputActions(this,'row1');" onkeyup=" InputActions(this,'row1');  " onchange="InputRules(6033860); ;  " type="text" value="" required="" data-validation-required-message="You must provide a name" />
-        </div>
-
-          <!-- fieldcontainer ends -->
-
-          <!-- fieldcontainer -->
-          <div class="form-group">
-          <input type="hidden" id="errorflagrow2" value=""/><input placeholder="Email" class="form-control" type="email" id="id123-control6033861" name="control6033861"  onclick="InputActions(this,'row2');" onkeyup=" InputActions(this,'row2');  " onchange="InputRules(6033861); ;  " type="text" value="" required="" data-validation-required-message="Email must be valid" />
-          </div>
-          <!-- fieldcontainer ends -->
-
-          <!-- fieldcontainer -->
-          <div class="form-group">
-          <input type="hidden" id="errorflagrow3" value=""/><textarea placeholder="Message" class="form-control" id="id123-control6033862" name="control6033862" onclick="InputActions(this,'row3');" onkeyup=" InputActions(this,'row3');  " onchange="InputRules(6033862); ;  " rows="4" required="" data-validation-required-message="You must enter a message"></textarea>
-          <p class="help-block">*All fields are required.</p>
-          </div>
-          <!-- fieldcontainer ends -->
-
-      </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-        <!-- Buttons begin here -->
-        <input type="hidden" name="go_back_and_edit" id="go_back_and_edit" value="0" /><input type="submit" OnClick=" if (0==1) { /* document.getElementById('mainform123').submit(); */ }  " class="formdefaultbut btn btn-primary" id="id123-button-send"  value="Send"/>
-
-        <!-- fieldcontainer ends -->
-        <!-- Buttons end here -->
-        </div>
-
-        <div style="height:1px; display: none; visibility: hidden;">
-        <input type="text" name="email"/>
-        </div>
-
-            <input type="hidden" name="hiddenfields" id="hiddenfields" value=""/>
-            <input type="hidden" name="hiddenfields_pages" id="hiddenfields_pages" value=""/>
-            <input type="hidden" name="activepage" id="activepage" value="1"/>
-            <input type="hidden" name="totalpages" id="totalpages" value="1"/>
-            <input type="hidden" name="nextpagenr" id="nextpagenr" value="2"/>
-            <input type="hidden" name="prevpagenr" id="prevpagenr" value="0"/>
-            <script type="text/javascript">
-            InputRules('firsttime');
-            </script><input type="hidden" name="usage" value="e"/>
-        </form>
-
-          <script type="text/javascript">
-          //MNG: Special Script for Sisow And multipage
-          SisowAndMultipage();
-          </script>
-
-        <!-- www.123contactform.com script ends here -->
-
-
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-<!-- FOOTPRINT HTML START -->
-<script type="text/javascript" src="http://script.footprintlive.com/?site=www.drewkoch.com"></script><noscript><a href="http://www.footprintlive.com" target="_blank"><img src="http://img.footprintlive.com/?cmd=nojs&amp;site=www.drewkoch.com" alt="free tracking" border="0" /></a></noscript>
-<!-- FOOTPRINT HTML END -->
-
-</body>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

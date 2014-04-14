@@ -1,0 +1,90 @@
+header {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #20467a;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #20467a), color-stop(100%, #3b7fdb));
+  background-image: -webkit-linear-gradient(left, #20467a, #3b7fdb);
+  background-image: linear-gradient(to right,#20467a, #3b7fdb); }
+  header:before {
+    content: '';
+    display: inline-block;
+    height: 70%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+    /* Adjusts for spacing */ }
+  header .greeting {
+    display: inline-block;
+    vertical-align: middle; }
+    header .greeting img {
+      width: 9.375em;
+      height: 9.375em;
+      border-radius: 50%;
+      border: 3px solid #fff; }
+  header nav {
+    position: absolute;
+    bottom: 3.125em;
+    width: 100%;
+    text-align: center; }
+
+main section {
+  text-align: left;
+  padding: 3.125em 18.75em; }
+  main section h1 {
+    font-weight: 400; }
+  main section p {
+    padding-top: 3.125em;
+    font-size: 1.125em;
+    line-height: 2.1875em; }
+  main section .browser {
+    position: relative;
+    max-width: 62.5em;
+    margin-top: 1.875em;
+    min-height: 220px;
+    padding-top: 24px;
+    background: #96a0a2;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #383838;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    font: 100 30px 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    padding: 30px 10px;
+    text-align: center;
+    color: #ccc; }
+  main section .browser:after,
+  main section .browser:before {
+    font-weight: 300;
+    line-height: 1; }
+  main section .browser:before {
+    position: absolute;
+    left: 5px;
+    top: -15px;
+    content: "\00B7\00B7\00B7";
+    color: #ccc;
+    font-size: 50px;
+    letter-spacing: -2px; }
+  main section .browser[data-url]:after {
+    position: absolute;
+    left: 45px;
+    right: 15px;
+    top: 6px;
+    content: attr(data-url);
+    padding: 2px;
+    background: #ccd1d2;
+    font-size: 7px;
+    font-family: 'Verdana';
+    text-align: left;
+    color: #000;
+    border-radius: 1px; }
+  main section .browser.image {
+    padding: 23px 0 0; }
+  main section .browser.image img {
+    display: block;
+    border-radius: 0 0 3px 3px;
+    width: 100%; }
+  main section.farmplicity {
+    background-color: #30a64f;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #30a64f), color-stop(100%, #30d95d));
+    background-image: -webkit-linear-gradient(left, #30a64f, #30d95d);
+    background-image: linear-gradient(to right,#30a64f, #30d95d); }

@@ -1,0 +1,103 @@
+@import 'bourbon/bourbon';
+
+header {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  @include linear-gradient(to right, #20467A, #3B7FDB);
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 70%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+  }
+  .greeting {
+    display: inline-block;
+    vertical-align: middle;
+    img {
+      width: em(150);
+      height: em(150);
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+  }
+  nav {
+    position: absolute;
+    bottom: em(50);
+    width: 100%;
+    text-align: center;
+  }
+}
+
+main {
+  section {
+    text-align: left;
+    padding: em(50) em(300);
+    h1 {
+      font-weight: 400;
+    }
+    p {
+      padding-top: em(50);
+      font-size: em(18);
+      line-height: em(35);
+    }
+    .browser {
+      position: relative;
+      max-width: em(1000);
+      margin-top: em(30);
+      min-height: 220px;
+      padding-top: 24px;
+      background: #96a0a2;
+      border-radius: 3px;
+      box-shadow: 0 0 3px #383838;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      font: 100 30px 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+      padding: 30px 10px;
+      text-align: center;
+      color: #ccc;
+    }
+    .browser:after,
+    .browser:before {
+      font-weight: 300;
+      line-height: 1;
+    }
+    .browser:before {
+      position: absolute;
+      left: 5px;
+      top: -15px;
+      content: "\00B7\00B7\00B7";
+      color: #ccc;
+      font-size: 50px;
+      letter-spacing: -2px;
+    }
+    .browser[data-url]:after {
+      position: absolute;
+      left: 45px;
+      right: 15px;
+      top: 6px;
+      content: attr(data-url);
+      padding: 2px;
+      background: #ccd1d2;
+      font-size: 7px;
+      font-family: 'Verdana';
+      text-align: left;
+      color: #000;
+      border-radius: 1px;
+    }
+    .browser.image {
+      padding: 23px 0 0;
+    }
+    .browser.image img {
+      display: block;
+      border-radius: 0 0 3px 3px;
+      width: 100%;
+    }
+    &.farmplicity {
+      @include linear-gradient(to right, #30A64F, #30D95D);
+    }
+  }
+
+}
