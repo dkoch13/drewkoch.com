@@ -8,7 +8,7 @@ header {
   &:before {
     content: '';
     display: inline-block;
-    height: 70%;
+    height: 80%;
     vertical-align: middle;
     margin-right: -0.25em; /* Adjusts for spacing */
   }
@@ -21,12 +21,35 @@ header {
       border-radius: 50%;
       border: 3px solid #fff;
     }
+    .social {
+      margin-top: em(100);
+      a {
+        color: white;
+        padding: 0 10px;
+        -webkit-transition: all .5s linear;
+        transition: all .5s linear;
+        &:hover {
+          color: #55acee;
+          -webkit-transition: all .5s linear;
+          transition: all .5s linear;
+        }
+      }
+    }
   }
   nav {
     position: absolute;
     bottom: em(50);
     width: 100%;
     text-align: center;
+    button {
+      width: 228px;
+      &:before {
+        content: "Wanna see my stuff?";
+      }
+      &:hover:before {
+        content: "Let's do this!";
+      }
+    }
   }
 }
 

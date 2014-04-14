@@ -67,7 +67,7 @@
 
 /* #Links
 ================================================== */
-	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+	a, a:visited { color: #333; text-decoration: none; outline: 0; }
 	a:hover, a:focus { color: #000; }
 	p a, p a:visited { line-height: inherit; }
 
@@ -110,22 +110,35 @@
 		border: 3px solid #fff;
 		border-radius: 30px;
 		color: white;
-		font-size: 1em;
+		font-size: 1.1em;
 		font-weight: 500;
-	  font-family: 'Open Sans', sans-serif; }
+	  font-family: 'Open Sans', sans-serif;
+	  -webkit-transition: all .5s linear;
+		transition: all .5s linear; }
 
 	.button:hover,
 	button:hover,
 	input[type="submit"]:hover,
 	input[type="reset"]:hover,
 	input[type="button"]:hover {
-		 }
+		background-color: rgba(0,0,0,0.2);
+		-webkit-transition: all .5s linear;
+		transition: all .5s linear; }
 
 	.button:active,
 	button:active,
 	input[type="submit"]:active,
 	input[type="reset"]:active,
 	input[type="button"]:active {
+		 }
+
+	.button:focus,
+	button:focus,
+	input[type="submit"]:focus,
+	input[type="reset"]:focus,
+	input[type="button"]:focus {
+		outline: none;
+		border-color: #518EE0;
 		 }
 
 	.button.full-width,

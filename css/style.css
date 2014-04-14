@@ -9,7 +9,7 @@ header {
   header:before {
     content: '';
     display: inline-block;
-    height: 70%;
+    height: 80%;
     vertical-align: middle;
     margin-right: -0.25em;
     /* Adjusts for spacing */ }
@@ -21,11 +21,28 @@ header {
       height: 9.375em;
       border-radius: 50%;
       border: 3px solid #fff; }
+    header .greeting .social {
+      margin-top: 6.25em; }
+      header .greeting .social a {
+        color: white;
+        padding: 0 10px;
+        -webkit-transition: all .5s linear;
+        transition: all .5s linear; }
+        header .greeting .social a:hover {
+          color: #55acee;
+          -webkit-transition: all .5s linear;
+          transition: all .5s linear; }
   header nav {
     position: absolute;
     bottom: 3.125em;
     width: 100%;
     text-align: center; }
+    header nav button {
+      width: 228px; }
+      header nav button:before {
+        content: "Wanna see my stuff?"; }
+      header nav button:hover:before {
+        content: "Let's do this!"; }
 
 main section {
   text-align: left;
