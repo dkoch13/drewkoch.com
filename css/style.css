@@ -38,7 +38,7 @@ header {
     width: 100%;
     text-align: center; }
     header nav button {
-      width: 228px; }
+      width: 15em; }
       header nav button:before {
         content: "Wanna see my stuff?"; }
       header nav button:hover:before {
@@ -49,10 +49,24 @@ main section {
   padding: 3.125em 18.75em; }
   main section h1 {
     font-weight: 400; }
-  main section p {
-    padding-top: 3.125em;
-    font-size: 1.125em;
-    line-height: 2.1875em; }
+  main section article {
+    margin-top: 3.125em;
+    text-align: center; }
+    main section article p {
+      text-align: left;
+      font-size: 1.25em;
+      line-height: 2.1875em;
+      font-family: 'Adamina', serif;
+      color: #fff; }
+      main section article p:not(:first-child) {
+        padding-top: 1.25em; }
+    main section article img {
+      margin: 1.875em 0; }
+    main section article img.styletile-farmplicity {
+      max-width: 80%;
+      box-shadow: 0px 2px 25px #000; }
+    main section article img.userflow {
+      max-width: 80%; }
   main section .browser {
     position: relative;
     max-width: 62.5em;
