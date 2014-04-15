@@ -3,8 +3,20 @@ $("#scroll").click(function() {
     scrollTop: window.innerHeight}, 800);
 });
 
-$("#reveal").click(function() {
-  $("main section").css("height", "auto"); //hardcoded height of section for animation purposes css3
-  $("#fadeOut").hide();
-  $(this).hide();
+$("#reveal-farmplicity").click(function() {
+  $("section.farmplicity").css("height", "auto");
+  $("section.farmplicity #fadeOut").hide();
+  $("#reveal-farmplicity").hide();
+});
+
+$("#reveal-voyager").click(function() {
+  $("section.voyager").css("height", "auto");
+  $("section.voyager #fadeOut").hide();
+  $("#reveal-voyager").hide();
+});
+
+$("#reveal-pantastic").click(function() {
+  $("section.pantastic").css("height", "auto");
+  $("section.pantastic #fadeOut").hide();
+  $("#reveal-pantastic").hide();
 });

@@ -51,6 +51,8 @@ header {
 
 main {
   section {
+    height: 110vh;
+    overflow: hidden;
     text-align: left;
     padding: em(50) 20%;
     position: relative;
@@ -81,6 +83,10 @@ main {
       }
       img.userflow {
         max-width: 80%;
+      }
+      img.code {
+        max-width: 80%;
+        box-shadow: 0 0 3px #383838;
       }
       figure {
         width: 100%;
@@ -145,43 +151,68 @@ main {
     }
 
     &.farmplicity {
-      height: em(750);
-      overflow: hidden;
       // @include linear-gradient(to right, #30A64F, #30D95D);
       background-color: #2CBF53;
-      .reveal {
-        position: absolute;
-        bottom: em(60);
-        width: 40%;
-        margin-left: 10%;
-        font-weight: 600;
-        font-size: em(20);
-
+      .fadeout {
+          position: absolute;
+          bottom: 0;
+          height: em(300);
+          width: 100%;
+          background: -webkit-linear-gradient(
+              rgba(255, 255, 255, 0) 0%,
+              rgba(44, 191, 83, 1) 100%
+          );
+          background-image: linear-gradient(
+              rgba(255, 255, 255, 0) 0%,
+              rgba(44, 191, 83, 1) 100%
+          );
       }
     }
     &.voyager {
       background-color: #1b72bf;
+      .fadeout {
+          position: absolute;
+          bottom: 0;
+          height: em(300);
+          width: 100%;
+          background: -webkit-linear-gradient(
+              rgba(255, 255, 255, 0) 0%,
+              rgba(27, 114, 191, 1) 100%
+          );
+          background-image: linear-gradient(
+              rgba(255, 255, 255, 0) 0%,
+              rgba(27, 114, 191, 1) 100%
+          );
+      }
     }
     &.pantastic {
-      background-color: tomato;
+      background-color: #A3972C;
+      .fadeout {
+          position: absolute;
+          bottom: 0;
+          height: em(300);
+          width: 100%;
+          background: -webkit-linear-gradient(
+              rgba(255, 255, 255, 0) 0%,
+              rgba(163, 151, 44, 1) 100%
+          );
+          background-image: linear-gradient(
+              rgba(255, 255, 255, 0) 0%,
+              rgba(163, 151, 44, 1) 100%
+          );
+      }
     }
   }
 
 }
 
-.fadeout {
-    position: absolute;
-    bottom: 0;
-    height: em(300);
-    width: 100%;
-    background: -webkit-linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(44, 191, 83, 1) 100%
-    );
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(44, 191, 83, 1) 100%
-    );
+.reveal {
+  position: absolute;
+  bottom: em(60);
+  width: 40%;
+  margin-left: 10%;
+  font-weight: 600;
+  font-size: em(20);
 }
 
 .wireframes img {

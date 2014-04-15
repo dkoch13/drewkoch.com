@@ -25,11 +25,11 @@
           <img src="img/headshot.jpg" alt="photo of my head">
           <h1>Hey there! I'm Drew.</h1>
           <h2>I'm a designer and front-end developer that enjoys building stuff.</h2>
-          <div class="social">
+          <!-- <div class="social">
             <a href="#" class="fa fa-twitter fa-3x"></a>
             <a href="#" class="fa fa-linkedin fa-3x"></a>
             <a href="#" class="fa fa-github fa-3x"></a>
-          </div>
+          </div> -->
         </div>
         <nav>
           <button id="scroll"></button>
@@ -39,7 +39,7 @@
         <section class="farmplicity">
           <h1>Project: Farmplicity</h1>
           <h2>Title: Co-founder/CEO/Head of Product</h2>
-          <h3>Date: Jan 2013 to Present</h3>
+          <h3>Date: January 2013 to Present</h3>
           <h3>Technology: <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">jQuery</span><span class="tag">Twitter Bootstrap</span><span class="tag">Ruby on Rails</span></h3>
           <article>
             <p>Farmplicity is an online marketplace where farmers can sell local ingredients directly to chefs in an easy-to-use virtual farmers market. Farmplicity was founded in January 2013 with the intention of making local ingredients easier to obtain, thus benefiting local economies and, over time, reducing prices. To date, over 100 farmers and 100 chefs have utilized Farmplicity in the St. Louis market.</p>
@@ -74,21 +74,29 @@
             </figure>
             <div id="fadeOut" class="fadeout"></div>
           </article>
-          <button id="reveal" class="reveal dark">Read Case Study <span class="fa fa-chevron-circle-down"></span></button>
+          <button id="reveal-farmplicity" class="reveal dark">Keep Reading <span class="fa fa-chevron-circle-down"></span></button>
         </section>
         <section class="voyager">
           <h1>Project: Voyager</h1>
           <h2>Title: Team Leader</h2>
-          <h3>Request: Design responsive prototype in 4 days</h3>
+          <h3>Request: Responsive prototype in four days</h3>
           <h3>Technology: <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">jQuery</span><span class="tag">Skeleton</span></h3>
           <article>
-            <p>Pantastic.co was a service developed that allowed anyone to order wall-sized prints of iPhone panoramas in a matter of seconds.</p>
+            <p>During the Code Fellows UX Engineering bootcamp I participated in, I was assigned to a team of four to build out a prototype web app in four days. After a deep brainstorming session, we settled on Voyager, a web app that allows for user-generated expeditions of cities. This was inspired by that fact that I am new to living in Seattle, but I don't want to go on boring tourist-y tours. Nor do I want to wander around aimlessly. Typically, when a new person goes to a city, they ask others about cool places to check out around town. But what if you don't know any locals? That's where Voyager comes in. By allowing locals to curate expeditions, a visitor can have the chance to see unique and interesting spots around town quickly and easily.</p>
+
+            <p>As a result of the time constraint, my team decided to build out the three core pages to a site like this: a home page, a city listings page, and an expedition details page. We started by developing a user flow in Graphviz, demonstrating the flow a typical user would go through in an app like this. </p>
+            <img class="userflow" src="img/userflow-farmplicity.png">
+            <p>Next, we began to sketch out wireframes, utilizing a mobile-first strategy and adding content as the window expanded.</p>
             <div class="wireframes">
+              <img src="img/voyager-wireframe-3.jpg" alt="voyager wireframe 3">
               <img src="img/voyager-wireframe-1.jpg" alt="voyager wireframe 1">
               <img src="img/voyager-wireframe-2.jpg" alt="voyager wireframe 2">
-              <img src="img/voyager-wireframe-3.jpg" alt="voyager wireframe 3">
             </div>
+            <p>Additionally, a style guide was developed to allow for consistency throughout the project. I personally took charge of the style guide development. I decided to go with a modern font, Open Sans, as well as several different shades of blue and an accent color of green, to play into a nature, outdoors-y, explorer mood. Inspiring, hip but not alienating, engaging, motivating, and discovery are the words we used to keep us on track with the feel of the app we were to build out.</p>
             <img class="styletile" src="img/voyager-styletile.jpg" alt="voyager styletile">
+            <p>At this point, we were ready to begin coding out the structure of the pages, utilizing pair programming as we built out a semantic HTML structure. Skeleton was our grid system of choice for this project.</p>
+            <img class="code" src="img/voyager-code.jpg" alt="voyager code">
+            <p>After the core HTML structure was in place, we began to incorporate design elements in CSS, incorporating elements from the style guide throughout. jQuery was then used to add interactivity to our prototype. The finished results can be seen below.</p>
             <figure>
               <div id="browser" class="browser image" data-url="http://voyager.io">
                 <img src="img/voyager-homepage.png" alt="voyager homepage">
@@ -104,21 +112,27 @@
                 <img src="img/voyager-tour.png" alt="voyager tour page">
               </div>
             </figure>
+            <div id="fadeOut" class="fadeout"></div>
           </article>
+          <button id="reveal-voyager" class="reveal dark">Keep Reading <span class="fa fa-chevron-circle-down"></span></button>
         </section>
         <section class="pantastic">
-          <h1>Project: Pantastic.co</h1>
+          <h1>Project: Pantastic</h1>
           <h2>Title: Founder</h2>
-          <h3>Date: Dec 2012 to Mar 2013</h3>
+          <h3>Date: December 2012 to March 2013</h3>
           <h3>Technology: <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">jQuery</span><span class="tag">Twitter Bootstrap</span></h3>
           <article>
-            <p>Pantastic.co was a service developed that allowed anyone to order wall-sized prints of iPhone panoramas in a matter of seconds.</p>
+            <p>Pantastic was a company I founded that allowed anyone to order three-foot-long prints of iPhone panoramas for $25, at the click of a button. This was my first foray into startups and building out websites, and the learnings I gleaned from this experience were invaluable.</p>
+            <p>I have always had a passion for photography, and I remember how difficult it was pre-iPhone to take panoramas. The panorama naturally lends itself well to large format printing and wall display, as its dimensions make it difficult to view at smaller sizes. While the iPhone allowed for panorama capture, there was no good way to display the beautiful panoramas people were taking. This is why I started Pantastic. I wanted to make it dead-simple to get a large, beatiful panorama on your wall.</p>
+            <p>While knowing very little at the time about developing a website, I leaned on the Bootstrap framework to get the following website up and running. With a large-format printer and lots of shipping boxes in tow, Pantastic was up and running!</p>
             <figure>
               <div id="browser" class="browser image listings" data-url="http://pantastic.co">
-                <img src="img/pantastic-homepage.png" alt="pantastic homepage">
+                <img src="img/pantastic.png" alt="pantastic homepage">
               </div>
             </figure>
+            <div id="fadeOut" class="fadeout"></div>
           </article>
+          <button id="reveal-pantastic" class="reveal dark">Keep Reading <span class="fa fa-chevron-circle-down"></span></button>
         </section>
       </main>
 

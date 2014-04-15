@@ -51,6 +51,8 @@ header nav button:hover:before {
 }
 
 main section {
+  height: 110vh;
+  overflow: hidden;
   text-align: left;
   padding: 3.125em 20%;
   position: relative;
@@ -83,6 +85,10 @@ main section article img.styletile {
 }
 main section article img.userflow {
   max-width: 80%;
+}
+main section article img.code {
+  max-width: 80%;
+  box-shadow: 0 0 3px #383838;
 }
 main section article figure {
   width: 100%;
@@ -144,32 +150,46 @@ main section article .browser.image img {
   margin-bottom: 0;
 }
 main section.farmplicity {
-  height: 46.875em;
-  overflow: hidden;
   background-color: #2CBF53;
 }
-main section.farmplicity .reveal {
-  position: absolute;
-  bottom: 3.75em;
-  width: 40%;
-  margin-left: 10%;
-  font-weight: 600;
-  font-size: 1.25em;
-}
-main section.voyager {
-  background-color: #1b72bf;
-}
-main section.pantastic {
-  background-color: tomato;
-}
-
-.fadeout {
+main section.farmplicity .fadeout {
   position: absolute;
   bottom: 0;
   height: 18.75em;
   width: 100%;
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, #2cbf53 100%);
   background-image: linear, false, rgba(255, 255, 255, 0) 0%, #2cbf53 100%;
+}
+main section.voyager {
+  background-color: #1b72bf;
+}
+main section.voyager .fadeout {
+  position: absolute;
+  bottom: 0;
+  height: 18.75em;
+  width: 100%;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, #1b72bf 100%);
+  background-image: linear, false, rgba(255, 255, 255, 0) 0%, #1b72bf 100%;
+}
+main section.pantastic {
+  background-color: #A3972C;
+}
+main section.pantastic .fadeout {
+  position: absolute;
+  bottom: 0;
+  height: 18.75em;
+  width: 100%;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, #a3972c 100%);
+  background-image: linear, false, rgba(255, 255, 255, 0) 0%, #a3972c 100%;
+}
+
+.reveal {
+  position: absolute;
+  bottom: 3.75em;
+  width: 40%;
+  margin-left: 10%;
+  font-weight: 600;
+  font-size: 1.25em;
 }
 
 .wireframes img {
