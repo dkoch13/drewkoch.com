@@ -78,66 +78,72 @@ main {
       }
       img.styletile-farmplicity {
         max-width: 80%;
-        box-shadow: 0px 2px 25px #000;
+        box-shadow: 0 0 3px #383838;
       }
       img.userflow {
         max-width: 80%;
       }
+      .browser {
+        position: relative;
+        width: 75%;
+        margin: em(20);
+        min-height: 220px;
+        padding-top: 24px;
+        background: #96a0a2;
+        border-radius: 3px;
+        box-shadow: 0 0 3px #383838;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        font: 100 30px 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+        padding: 30px 10px;
+        text-align: center;
+        color: #ccc;
+        height: em(225);
+        overflow: scroll;
+      }
+
+      .browser:after,
+      .browser:before {
+        font-weight: 300;
+        line-height: 1;
+      }
+      .browser:before {
+        position: absolute;
+        left: 5px;
+        top: -15px;
+        content: "\00B7\00B7\00B7";
+        color: #ccc;
+        font-size: 50px;
+        letter-spacing: -2px;
+      }
+      .browser[data-url]:after {
+        position: absolute;
+        left: 45px;
+        right: 15px;
+        top: 6px;
+        content: attr(data-url);
+        padding: 2px;
+        background: #ccd1d2;
+        font-size: 7px;
+        font-family: 'Verdana';
+        text-align: left;
+        color: #000;
+        border-radius: 1px;
+      }
+      .browser.image {
+        padding: 23px 0 0;
+      }
+      .browser.image img {
+        display: block;
+        border-radius: 0 0 3px 3px;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
     }
 
-    .browser {
-      position: relative;
-      max-width: em(1000);
-      margin-top: em(30);
-      min-height: 220px;
-      padding-top: 24px;
-      background: #96a0a2;
-      border-radius: 3px;
-      box-shadow: 0 0 3px #383838;
-      box-sizing: border-box;
-      display: inline-block;
-      vertical-align: top;
-      font: 100 30px 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-      padding: 30px 10px;
-      text-align: center;
-      color: #ccc;
-    }
-    .browser:after,
-    .browser:before {
-      font-weight: 300;
-      line-height: 1;
-    }
-    .browser:before {
-      position: absolute;
-      left: 5px;
-      top: -15px;
-      content: "\00B7\00B7\00B7";
-      color: #ccc;
-      font-size: 50px;
-      letter-spacing: -2px;
-    }
-    .browser[data-url]:after {
-      position: absolute;
-      left: 45px;
-      right: 15px;
-      top: 6px;
-      content: attr(data-url);
-      padding: 2px;
-      background: #ccd1d2;
-      font-size: 7px;
-      font-family: 'Verdana';
-      text-align: left;
-      color: #000;
-      border-radius: 1px;
-    }
-    .browser.image {
-      padding: 23px 0 0;
-    }
-    .browser.image img {
-      display: block;
-      border-radius: 0 0 3px 3px;
-      width: 100%;
-    }
+
     &.farmplicity {
       @include linear-gradient(to right, #30A64F, #30D95D);
     }
