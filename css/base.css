@@ -116,12 +116,37 @@
 	  -webkit-transition: all .5s linear;
 		transition: all .5s linear; }
 
+	.button.dark,
+	button.dark,
+	input[type="submit"].dark,
+	input[type="reset"].dark,
+	input[type="button"].dark {
+		background-color: rgba(0,0,0,0.3);
+		padding: 17px 40px;
+		border: 3px solid #fff;
+		border-radius: 30px;
+		color: white;
+		font-size: 1.1em;
+		font-weight: 500;
+	  font-family: 'Open Sans', sans-serif;
+	  -webkit-transition: all .5s linear;
+		transition: all .5s linear; }
+
 	.button:hover,
 	button:hover,
 	input[type="submit"]:hover,
 	input[type="reset"]:hover,
 	input[type="button"]:hover {
 		background-color: rgba(0,0,0,0.2);
+		-webkit-transition: all .5s linear;
+		transition: all .5s linear; }
+
+	.button.dark:hover,
+	button.dark:hover,
+	input[type="submit"].dark:hover,
+	input[type="reset"].dark:hover,
+	input[type="button"].dark:hover {
+		background-color: rgba(0,0,0,0.5);
 		-webkit-transition: all .5s linear;
 		transition: all .5s linear; }
 

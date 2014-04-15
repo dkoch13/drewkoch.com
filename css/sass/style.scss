@@ -1,20 +1,16 @@
 @import 'bourbon/bourbon';
 
+body, html {
+  height: 100%;
+}
+
 header {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   @include linear-gradient(to right, #20467A, #3B7FDB);
-  &:before {
-    content: '';
-    display: inline-block;
-    height: 80%;
-    vertical-align: middle;
-    margin-right: -0.25em; /* Adjusts for spacing */
-  }
   .greeting {
-    display: inline-block;
-    vertical-align: middle;
+    padding: 10% em(50);
     img {
       width: em(150);
       height: em(150);
@@ -57,6 +53,9 @@ main {
   section {
     text-align: left;
     padding: em(50) 20%;
+    position: relative;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
     h1 {
       font-weight: 400;
     }
@@ -76,7 +75,7 @@ main {
       img {
         margin: em(30) 0;
       }
-      img.styletile-farmplicity {
+      img.styletile {
         max-width: 50%;
         box-shadow: 0 0 3px #383838;
       }
@@ -103,11 +102,6 @@ main {
         padding: 30px 10px;
         text-align: center;
         color: #ccc;
-        height: em(225);
-        &.listings {
-          height: auto;
-        }
-        overflow: scroll;
       }
 
       .browser:after,
@@ -151,11 +145,45 @@ main {
     }
 
     &.farmplicity {
-      @include linear-gradient(to right, #30A64F, #30D95D);
+      height: em(750);
+      overflow: hidden;
+      // @include linear-gradient(to right, #30A64F, #30D95D);
+      background-color: #2CBF53;
+      .reveal {
+        position: absolute;
+        bottom: em(60);
+        width: 40%;
+        margin-left: 10%;
+        font-weight: 600;
+        font-size: em(20);
+
+      }
+    }
+    &.voyager {
+      background-color: #1b72bf;
     }
     &.pantastic {
       background-color: tomato;
     }
   }
 
+}
+
+.fadeout {
+    position: absolute;
+    bottom: 0;
+    height: em(300);
+    width: 100%;
+    background: -webkit-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(44, 191, 83, 1) 100%
+    );
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(44, 191, 83, 1) 100%
+    );
+}
+
+.wireframes img {
+  max-width: 80%;
 }
