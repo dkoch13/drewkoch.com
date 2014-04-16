@@ -169,8 +169,10 @@ main {
 
 .reveal {
   position: absolute;
-  bottom: em(10);
+  bottom: em(60);
   margin-left: 20%;
+  font-weight: 600;
+  font-size: em(20);
 }
 
 .wireframes img {

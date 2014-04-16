@@ -142,8 +142,10 @@ main section.other .browser {
 
 .reveal {
   position: absolute;
-  bottom: 0.625em;
+  bottom: 3.75em;
   margin-left: 20%;
+  font-weight: 600;
+  font-size: 1.25em;
 }
 
 .wireframes img {
