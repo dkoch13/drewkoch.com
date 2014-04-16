@@ -14,13 +14,14 @@
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
         <link rel="stylesheet" href="css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Adamina' rel='stylesheet' type='text/css'>
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-      <header>
+      <header class="animated fadeIn">
         <div class="greeting">
           <img src="img/headshot.jpg" alt="photo of my head">
           <h1>Hey there! I'm Drew.</h1>
@@ -36,16 +37,16 @@
         </nav>
       </header>
       <main>
-        <nav id="section-nav" class="section-nav">
+        <nav id="section-nav" class="section-nav animated">
           <button id="section-1-scroll">Farmplicity</button>
           <div class="vertical-line-short"></div>
           <button id="section-2-scroll">Voyager</button>
           <div class="vertical-line-short"></div>
           <button id="section-3-scroll">Pantastic</button>
           <div class="vertical-line-tall"></div>
-          <button id="section-4-scroll">More Stuff!</button>
+          <button id="section-4-scroll">More Stuff</button>
           <div class="vertical-line-tall"></div>
-          <button id="section-5-scroll">Contact Me</button>
+          <button id="section-5-scroll">Contact</button>
         </nav>
         <section class="farmplicity" id="section-1">
           <h1>Project: Farmplicity</h1>
@@ -53,6 +54,11 @@
           <h3>Date: January 2013 to Present</h3>
           <h3>Technology: <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">jQuery</span><span class="tag">Twitter Bootstrap</span><span class="tag">Ruby on Rails</span></h3>
           <article>
+            <figure>
+              <div id="browser" class="browser image" data-url="http://www.farmplicity.com">
+                <img src="img/farmplicity-homepage-top.png" alt="farmplicity homepage">
+              </div>
+            </figure>
             <p>Farmplicity is an online marketplace where farmers can sell local ingredients directly to chefs in an easy-to-use virtual farmers market. Farmplicity was founded in January 2013 with the intention of making local ingredients easier to obtain, thus benefiting local economies and, over time, reducing prices. To date, over 100 farmers and 100 chefs have utilized Farmplicity in the St. Louis market.</p>
             <p>For this project, I worked on a team of four to develop the concept, create the business plan, and launch the company. I then assumed the role of CEO and led all aspects of the company for six months. Additionally, I led design for the entire project. This included designing the logo and building the brand, creating marketing materials, and designing and developing the front-end of the website.</p>
             <p>For the design of Farmplicity, I wanted to achieve a warm, homey, down-to-earth feel that would lend itself well to the concept of local food. I also wanted to create an air of professionality while still being fun and a little quirky.</p>
@@ -93,7 +99,12 @@
           <h3>Request: Responsive prototype in four days</h3>
           <h3>Technology: <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">jQuery</span><span class="tag">Skeleton</span></h3>
           <article>
-            <p>During the Code Fellows UX Engineering bootcamp I participated in, I was assigned to a team of four to build out a prototype web app in four days. After a deep brainstorming session, we settled on Voyager, a web app that allows for user-generated expeditions of cities. This was inspired by that fact that I am new to living in Seattle, but I don't want to go on boring tourist-y tours. Nor do I want to wander around aimlessly. Typically, when a new person goes to a city, they ask others about cool places to check out around town. But what if you don't know any locals? That's where Voyager comes in. By allowing locals to curate expeditions, a visitor can have the chance to see unique and interesting spots around town quickly and easily.</p>
+            <figure>
+              <div id="browser" class="browser image" data-url="http://voyager.io">
+                <img src="img/voyager-homepage-top.png" alt="voyager homepage">
+              </div>
+            </figure>
+            <p>During the Code Fellows UX Engineering bootcamp I participated in, I was assigned to a team of three to build out a prototype web app in four days. After a deep brainstorming session, we settled on Voyager, a web app that allows for user-generated expeditions of cities. This was inspired by that fact that I am new to living in Seattle, but I don't want to go on boring tourist-y tours. Nor do I want to wander around aimlessly. Typically, when a new person goes to a city, they ask others about cool places to check out around town. But what if you don't know any locals? That's where Voyager comes in. By allowing locals to curate expeditions, a visitor can have the chance to see unique and interesting spots around town quickly and easily.</p>
 
             <p>As a result of the time constraint, my team decided to build out the three core pages to a site like this: a home page, a city listings page, and an expedition details page. We started by developing a user flow in Graphviz, demonstrating the flow a typical user would go through in an app like this. </p>
             <img class="userflow" src="img/userflow-farmplicity.png">
@@ -133,6 +144,11 @@
           <h3>Date: December 2012 to March 2013</h3>
           <h3>Technology: <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">jQuery</span><span class="tag">Twitter Bootstrap</span></h3>
           <article>
+            <figure>
+              <div id="browser" class="browser image" data-url="http://pantastic.co">
+                <img src="img/pantastic-homepage-top.png" alt="pantastic homepage">
+              </div>
+            </figure>
             <p>Pantastic was a company I founded that allowed anyone to order three-foot-long prints of iPhone panoramas for $25, at the click of a button. This was my first foray into startups and building out websites, and the learnings I gleaned from this experience were invaluable.</p>
             <p>I have always had a passion for photography, and I remember how difficult it was pre-iPhone to take panoramas. The panorama naturally lends itself well to large format printing and wall display, as its dimensions make it difficult to view at smaller sizes. While the iPhone allowed for panorama capture, there was no good way to display the beautiful panoramas people were taking. This is why I started Pantastic. I wanted to make it dead-simple to get a large, beatiful panorama on your wall.</p>
             <p>While knowing very little at the time about developing a website, I leaned on the Bootstrap framework to get the following website up and running. With a large-format printer and lots of shipping boxes in tow, Pantastic was up and running!</p>
@@ -148,11 +164,11 @@
         <section class="other" id="section-4">
           <h1>More Stuff!</h1>
 
-          <a href="https://github.com/drewbkoch/simpleform" target="_blank" id="browser" class="browser image simpleform" data-content="Here is a caption" data-url="http://simpleform.io">
+          <a href="simpleform" target="_blank" id="browser" class="browser image simpleform" data-content="Here is a caption" data-url="http://simpleform.io">
             <video src="img/simpleform-trim.mp4" autoplay loop muted alt="simple form video"></video>
           </a>
 
-          <a href="https://github.com/drewbkoch/foodtruck" target="_blank" id="browser" class="browser image" data-url="http://foodtruck.io">
+          <a href="foodtruck" target="_blank" id="browser" class="browser image" data-url="http://foodtruck.io">
               <img src="img/foodtruck.png" alt="dontsackme homepage">
           </a>
 
@@ -160,12 +176,18 @@
             <img src="img/puppynation.png" alt="puppynation homepage">
           </a>
 
-          <a href="http://dontsackme.com/" target="_blank" id="browser" class="browser image" data-url="http://dontsackme.com">
+          <a href="dontsackme" target="_blank" id="browser" class="browser image" data-url="http://dontsackme.com">
             <img src="img/dontsackme.png" alt="dontsackme homepage">
           </a>
 
         </section>
       </main>
+      <footer>
+        <a href="https://www.linkedin.com/in/drewbkoch" target="_blank" class="fa fa-linkedin fa-3x"></a>
+        <a href="https://github.com/drewbkoch" target="_blank" class="fa fa-github fa-3x"></a>
+        <a href="https://twitter.com/drewbkoch" target="_blank"class="fa fa-twitter fa-3x"></a>
+        <a href="mailto:dkoch13@gmail.com" class="fa fa-envelope fa-3x"></a>
+      </footer>
 
 
 

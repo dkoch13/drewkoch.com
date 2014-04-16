@@ -3,26 +3,23 @@ $("#scroll").click(function() {
     scrollTop: window.innerHeight}, 800);
 });
 
-$("#reveal-farmplicity").click(function() {
-  var newHeight = $("section.farmplicity")[0].scrollHeight;
-  $("section.farmplicity").css("height", newHeight);
-  $("section.farmplicity #fadeOut").fadeOut();
-  $("#reveal-farmplicity").hide();
-});
+function reveal(button, anchor) {
+  $(button).click(function() {
+  var newHeight = $(anchor)[0].scrollHeight;
+  $(anchor).css("height", newHeight);
+  $(anchor + " fadeOut").hide();
+  $(button).hide();
+  $('html, body').animate({
+      scrollTop: $(window).scrollTop() + 400
+  }, 600);
+  });
+};
 
-$("#reveal-voyager").click(function() {
-  var newHeight = $("section.voyager")[0].scrollHeight;
-  $("section.voyager").css("height", newHeight);
-  $("section.voyager #fadeOut").hide();
-  $("#reveal-voyager").hide();
-});
+reveal("#reveal-farmplicity", "section.farmplicity");
 
-$("#reveal-pantastic").click(function() {
-  var newHeight = $("section.pantastic")[0].scrollHeight;
-  $("section.pantastic").css("height", newHeight);
-  $("section.pantastic #fadeOut").hide();
-  $("#reveal-pantastic").hide();
-});
+reveal("#reveal-voyager", "section.voyager");
+
+reveal("#reveal-pantastic", "section.pantastic");
 
 $("#section-1-scroll").click(function() {
   $('html, body').animate({
@@ -48,6 +45,12 @@ $("#section-4-scroll").click(function() {
   }, 1000);
 });
 
+$("#section-5-scroll").click(function() {
+  $('html, body').animate({
+    scrollTop:$("footer").offset().top
+  }, 1000);
+});
+
 
 function sectionNavShow () {
   // $("#scroll").click(function() {
@@ -56,9 +59,9 @@ function sectionNavShow () {
   var topOfOthDiv = ( $("main").offset().top - 100);
   $(window).scroll(function() {
       if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-          $("#section-nav").fadeIn(); //reached the desired point -- show div
+          $("#section-nav").removeClass("slideOutRight").addClass("slideInRight").show(); //reached the desired point -- show div
       } else {
-        $("#section-nav").fadeOut();
+        $("#section-nav").removeClass("slideInRight").addClass("slideOutRight");
       }
   });
 };

@@ -11,6 +11,10 @@ header {
   background-image: -webkit-linear-gradient(left, #20467a, #3b7fdb);
   background-image: linear-gradient(to right,#20467a, #3b7fdb);
 }
+header .animated {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
 header .greeting {
   padding: 10% 3.125em;
 }
@@ -126,7 +130,7 @@ main section.pantastic .fadeout {
   background-image: linear, false, rgba(255, 255, 255, 0) 0%, #a3972c 100%;
 }
 main section.other {
-  min-height: calc(100vh - 6.25em);
+  height: auto;
   overflow: visible;
   background-color: tomato;
   text-align: center;
@@ -225,7 +229,8 @@ main section.other .browser {
 .section-nav button {
   padding: 10px 20px;
   width: 9.375em;
-  font-weight: 600;
+  font-weight: 400;
+  border-color: rgba(255, 255, 255, 0.6);
 }
 .section-nav .vertical-line-short {
   border-left: 2px dotted rgba(255, 255, 255, 0.3);
@@ -236,4 +241,27 @@ main section.other .browser {
   border-left: 2px dotted rgba(255, 255, 255, 0.3);
   height: 6.25em;
   margin-left: 6.25em;
+}
+
+footer {
+  width: 100%;
+  padding: 3.125em 0;
+  text-align: center;
+  background-color: #20467a;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #20467a), color-stop(100%, #3b7fdb));
+  background-image: -webkit-linear-gradient(left, #20467a, #3b7fdb);
+  background-image: linear-gradient(to right,#20467a, #3b7fdb);
+}
+footer a {
+  margin: 1.875em 0.625em;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+footer a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+footer .fa {
+  color: white;
 }

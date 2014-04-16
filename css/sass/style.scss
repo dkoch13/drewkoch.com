@@ -9,6 +9,10 @@ header {
   height: 100%;
   text-align: center;
   @include linear-gradient(to right, #20467A, #3B7FDB);
+  .animated {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+  }
   .greeting {
     padding: 10% em(50);
     img {
@@ -147,7 +151,7 @@ main {
       }
     }
     &.other {
-      min-height: calc(100vh - 6.25em);
+      height: auto;
       overflow: visible;
       background-color: tomato;
       text-align: center;
@@ -247,7 +251,8 @@ main {
   button {
     padding: 10px 20px;
     width: em(150);
-    font-weight: 600;
+    font-weight: 400;
+    border-color: rgba(255,255,255,0.6);
   }
   .vertical-line-short {
     border-left: 2px dotted rgba(255,255,255,0.3);
@@ -258,5 +263,26 @@ main {
     border-left: 2px dotted rgba(255,255,255,0.3);
     height: em(100);
     margin-left: em(100);
+  }
+}
+
+footer {
+  width: 100%;
+  padding: em(50) 0;
+  text-align: center;
+  @include linear-gradient(to right, #20467A, #3B7FDB);
+  a {
+    margin: em(30) em(10);
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    &:hover {
+      color: rgba(255,255,255,0.7);
+      -webkit-transition: all .5s linear;
+      transition: all .5s linear;
+    }
+  }
+
+  .fa {
+    color: white;
   }
 }

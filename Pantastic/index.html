@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pantastic - The Easiest Way to Print iPhone Panoramas</title>
+    <meta name="description" content="Pantastic is the easiest way to bring your iPhone panoramas to life! Simply upload your panorama, and we will print, box, and ship a beautiful 8" x 36" print right to your doorstep.">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="pantasticnewnav.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Lobster|Open+Sans:300,400|Josefin+Sans:300,400,900' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){ 
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        }); 
+ 
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
+        $('.toplogo').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
+
+
+        $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top - 50
+            }, 1000);
+            return false;
+        }
+    }
+});
+
+        
+
+    });
+    
+
+
+
+    </script>  
+  </head>
+ 
+  <body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+     <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+ 
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+ 
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      <a class="brand" href="#"><img class="toplogo" src="navlogo.png" alt="logo"/></a>
+ 
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse">
+        <!-- .nav, .navbar-search, .navbar-form, etc -->
+        <ul class="nav nav-pills">
+        <li class="active">
+            <a href="#1">Home</a>
+        </li>
+         <li><a href="#2">What is Pantastic?</a></li>
+         <li><a href="#3">About Us</a></li>
+         <li><a href="#4">FAQ</a></li>
+         <li><a href="http://pantastic.co/blog">Blog</a></li>
+         <li><a  class="pull-right hidden-desktop">Buy Now!</a></li>
+         </ul>
+
+         <div class="ordernow">
+          <a  class="pull-right btn btn-custom btn-medium visible-desktop" href=".modal" data-toggle="modal">Buy Now!</a>
+        </div>
+       </div>
+ 
+    </div>
+  </div>
+</div>
+
+
+   <div id="1"class="herounit">
+    <div class="container">
+
+          <h1> Introducing Pantastic! </h1>
+
+
+      <div class="row">
+        <h4 class="hidden-phone"> Pantastic is the easiest way to bring your iPhone panoramas to life! Simply upload your panorama, and we will print, box, and ship a beautiful 8" x 36" print right to your doorstep. </h4>
+        <h4 class="visible-phone"> Pantastic is the easiest way to bring your iPhone panoramas to life! Simply upload your panorama, and we will print, box, and ship a beautiful 8" x 36" print right to your doorstep. All for only $25. </h4>
+      </div>
+      <div class="row">
+          <img src="pricetag2.png" alt="pricetag">
+    </div>
+    
+    <div class="blockbutton">
+      <a  class="btn btn-custom btn-block visible-phone">Buy Now!</a>
+    </div>
+   </div>
+ </div>
+
+<div class="visible-desktop">
+<a href="#" class="scrollup">Scroll</a>
+</div>
+
+
+   <div class="secondunit">
+    <div id="2"class="separator">
+    </div>
+    <div class="container">
+     <div class="toppoints">
+      <div class="row">
+        <h2>What is Pantastic?</h2>
+      <ul class="thumbnails">
+    <li class="span4">
+    <div class="thumbnail">
+      <img src="piggy_color.png" alt="Piggy Bank">
+      <h3>Beauty that won't break the bank</h3>
+    </div>
+    </li>
+  <li class="span4">
+    <div class="thumbnail">
+      <img src="openbox_color.png" alt="Open Box">
+      <h3>Delivered right to your doorstep</h3>
+    </div>
+  </li>
+  
+    <li class="span4">
+    <div class="thumbnail">
+      <img src="bestribbon_color.png" alt="Best Quality">
+      <h3>The highest quality around</h3>
+    </div>
+    </li>
+  </ul>
+</div>
+</div>
+</div>  
+</div>
+
+
+<div class="pantasticprocess">
+        <div id="2.5" class="separator">
+        </div>
+        <div class="container">
+
+      <img src="tppribbon.png" alt="The Pantastic Process" class="tppribbon">
+      <ul>
+        <li>1. Take the perfect panorama on your iPhone </li>
+        <li>2. Upload your photo from your phone or computer</li>
+        <li>3. We print your photo on our state-of-the-art panorama printer</li>
+        <li>4. We package your print in only the finest of cardboard boxes</li>
+        <li>5. Enjoy!</li>
+      </ul>
+
+        </div>
+</div>
+
+
+<div class="panoramavideo visible-desktop">
+        <div id="2.75" class="separator">
+        </div>
+        <h2>How to Take an iPhone Panorama</h2>
+         <div class="iphone">
+          <img src="iphone.png">
+        </div>
+        <div class="iphonevideo">
+          <iframe width="640" height="360" src="http://www.youtube.com/embed/3J0JDaGVgh4?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+      </div>  
+
+
+   <div class="thirdunit">
+    <div  id="3" class="separator">
+    </div>
+    <div class="container">
+      <h2>Meet Pantastic</h2>
+    <div class="row">
+      <div class="span6">
+        <h3>About the Founder</h3>
+        <hr class="underline2">
+        <p> Drew Koch is the Founder and CEO of Pantastic. Drew grew up in Houston, Texas, and his interest in photography and printing started to develop in high school at The Kinkaid School. Without the support of his amazing photography teacher at Kinkaid for four years, Mr. David Veselka, none of this would be possible. Now a senior at Washington University in St. Louis, Drew looks to bring everyone's panoramas to life with the launch of his first company, Pantastic. He is very excited about the opportunities and challenges ahead.</p>
+
+        <p><i class="icon-bullhorn"></i> Drop Drew a line <a href="mailto:drew@pantastic.co">here</a>.</p>
+
+        <img class="printerimage hidden-phone" src="epson3880.png" alt="printer">
+
+        <h3>Made in St. Louis</h3>
+        <hr class="underline2">
+        <p> Pantastic prints, boxes, and ships all panoramas from their facilities in the heart of St. Louis. While it used to be the Gateway to the West, St. Louis is now shifting its focus to technology. With many resources for entrepreneurs in place, St. Louis is starting to shape its position as a Midwest stronghold for technology. To learn more, check out <a href="http://innovatestl.org/">innovatestl.org</a>. </p>
+      </div>
+    <div class="span6 offset">
+      <div class="polaroid hidden-phone">
+      <img src="doublepolaroid2.png" alt="drew">
+    </div>
+      <h3>Printers</h3>
+      <hr class="underline2">
+      <p>At Pantastic, every single print goes through our state-of-the-art Epson photo printer. We know quality, and we know the importance of a good printer. That's why we didn't skimp on a cheap one. In fact, we went with the best. Oh, yea, and we use the highest quality archival inkjet roll paper to boot. Don't worry about your photo fading during your lifetime.</p> 
+    
+        <img class="studioimage hidden-phone" src="arch.png" alt="studio">
+      </div>
+    </div>
+
+   </div>
+ </div>
+
+
+<div class="fourthunit">
+  <div id="4" class="separator">
+    </div>
+  <div class="container">
+    <h2>FAQ</h2>
+    <div class="row">
+      <div class="span5 offset1 firstblock">
+        <p>Q: How much does a Pantastic Panorama cost?</p><p> A: It costs only $25.</p>
+        <p>Q: What comes with my purchase? </p><p>A: One 8" x 36" panorama.</p>
+        <p>Q: What if I want to order a different size panorama?</p><p> A: At the moment, we only have the capacity to print at one size. If you would like to order a different size, contact us at <a href="mailto:hi@pantastic.co">hi@pantastic.co</a>.<p>
+        <p>Q: What if I want to order more than one panorama?</p><p> A: Currently, the only way to do so is to place multiple separate orders. In the future, we hope to make this process easier.</p>  
+        <p></p>
+      </div>
+      <div class="span5 offset secondblock">
+        <p>Q: How do I take a panorama on my iPhone? </p><p>A: It's really easy. Simply launch the Camera App, press "Options" at the top of the sceen, and select "Panorama." Then follow the on-screen instructions to take your panorama. <a href="http://www.youtube.com/watch?v=3J0JDaGVgh4" target="_blank">Here is a video</a> if you're having trouble.</p>
+        <p>Q: Do I have to upload a panorama taken from my iPhone to be printed? </p><p>A: Yes, at the moment, we only support the printing of panoramas taken with iPhones. If you would like a different size panorama to be printed, contact us at <a href="mailto:hi@pantastic.co">hi@pantastic.co</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <div class="separator">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <div class="h3text">
+       <h3 class="hidden-phone">To order, <a href="#" data-toggle="modal">click here</a></h3>
+       <h3>Say hi: <a href="mailto:hi@pantastic.co">hi@pantastic.co</a></h3>
+       <h3>Customer Service: <a href="mailto:orders@pantastic.co">orders@pantastic.co</a></h3>
+     </div>
+     <p class="copyright">Copyright 2013, Pantastic. All rights reserved.</p>
+     <p class="legale"><a href="termsofservice.html">Terms of Service</a> | <a href="privacypolicy.html">Privacy Policy</a></p>
+      </div>
+      <div class="span3 offset2 visible-desktop">
+      <ul>
+        <li><a href="http://www.facebook.com/bepantastic"><img src="facebook.png"/></a></li>
+      <li><a href="http://www.twitter.com/bepantastic"><img src="twitter.png"/></a></li>
+    </ul>
+  </div>
+  </div>
+    <img class="footerhead" src="footerhead.png" alt="dude's head">
+  </div>
+</div>
+
+
+
+
+<!-- Modal popup field -->
+<div class="modal hide fade" class="modal" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <img src="modallogo.png" alt="Pantastic - Order Here">
+  </div>
+  <div class="modal-body">
+
+  <h2>Step 1 - Upload your Panorama</h2>
+
+ <script src="http://49video.resources.s3.amazonaws.com/uploadthingy.js" type="text/javascript" language="Javascript"></script>
+<iframe id="uploadtarget" name="uploadtarget" src="" style="width:0px;height:0px;border:0"></iframe>
+<div id='uploadarea'><p><img src=http://49video.resources.s3.amazonaws.com/loading.gif width=16 height=16>  Loading <a href=http://www.uploadthingy.com>Uploadthingy file upload form</a>... <br><br>If your upload form doesn't display within a few seconds, please check the <a href=http://www.uploadthingy.com/faq.html>FAQ</a> or contact us at hello@uploadthingy.com. We'd love to help out!</p></div>
+<script type="text/javascript" language="Javascript">
+var sitecode="YmVwYW50YXN0aWMuY29t";
+uploadcompletehtml="<p>Your upload has successfully completed. Use this code to reference your upload: <$refcode$>.</p> <br> <p>To complete your order, please click on the button below to securely* submit your payment and shipping information.</p><br><h6>*This site uses WePay to collect payment information. WePay uses state-of-the-art cryptographic algorithms during data transmission (HTTPS with RSA 2048 bit key and SHA 256 certificate). Needless to say, your data is safe with us :)</h6>";
+authupload();
+function getUploadForm(json) {
+showblinks=false;
+var h="";
+h+="<p style='color:black;'>Your name: *<br>";
+h+="<input type=text style='width: 95%;' id='uploader_name' name='uploader_name'></p>";
+h+="<p style='color:black;'>Your email: *<br>";
+h+="<input type=text style='width: 95%;' id='uploader_company' name='uploader_company'></p>";
+h+="<p style='color:black;'>Panorama:<br>";
+h+="<input type='file' size='40' id='uploadfile0' name='file0'><br>";
+h+="</p>";
+h+="<input type='hidden' id='authcode' name='authcode' value='"+json.c+"'>";
+h+="<input type='hidden' id='uploadid' name='id' value='widget$"+json.d+"$"+json.c.substring(0,json.c.indexOf("_"))+"'>";
+h+="<input type='hidden' id='callbackurl' name='callbackurl' value='"+baseserverurl+"'>";
+h+="<input type='hidden' name='savemeta' value='yes'>";
+h+="<p><input class='btn btn-custom' id='49widget_submitbutton' type='button' onclick='doUpload();' name='suploadvideo' value='Upload'></p>";
+return h;
+}
+function doUpload() { if (checkform()) { upload('start'); } }
+function checkform() { 
+var found=false;
+var cnt=0;
+while (document.getElementById('uploadfile'+cnt)) {
+if (document.getElementById('uploadfile'+cnt).value.length>0) {
+found=true;
+break;
+}
+cnt++;
+}
+if (!found) {
+alert('Please select at least one file to upload.');
+return false;
+}
+if (document.getElementById('uploader_name').value.length==0) {
+alert('Please fill out the field: Your name:.');
+return false;
+}
+if (document.getElementById('uploader_company').value.length==0) {
+alert('Please fill out the field: Your email:.');
+return false;
+}
+uploadmetadata=new Array();
+uploadmetadata['name']=document.getElementById('uploader_name').value;
+uploadmetadata['company']=document.getElementById('uploader_company').value;
+uploadmetadata['uploadfile0']=document.getElementById('uploadfile0').value;
+  return true;
+}
+</script>
+
+</div>
+<div class="modal-footer">
+    <a class="wepay-widget-button wepay-blue" id="wepay_widget_anchor_50eca380160f4" href="https://www.wepay.com/stores/407125/item/294104" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-shopping-cart icon-white"></i> Pay Now</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 294104,widget_type: "store_item_buy_now",anchor_id: "wepay_widget_anchor_50eca380160f4",widget_options: {store_id: 407125,show_item_price: false,show_item_images: true,button_text_sold_out: "Sold Out",show_item_custom_options: true,button_text: "Buy Now"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
+  </div>
+
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+<script src="bootstrap/js/bootstrap.min.js"></script>  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38736317-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pantastic - Buy your Pantastic Panorama</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="buy.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Lobster|Open+Sans:300,400|Josefin+Sans:300,400' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/jquery.slideto.min.js" type="text/javascript"></script>
+
+ 
+  </head>
+ 
+  <body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+     <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+ 
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+
+ 
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      <a class="brand" href="index.html"><img class="toplogo" src="navlogo.png" alt="logo"/></a>
+ 
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse">
+        <!-- .nav, .navbar-search, .navbar-form, etc -->
+
+       </div>
+ 
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="buydiv">
+
+
+<h2>Step 1 - Upload your Panorama</h2>
+
+<script src="http://49video.resources.s3.amazonaws.com/uploadthingy.js" type="text/javascript" language="Javascript"></script>
+<iframe id="uploadtarget" name="uploadtarget" src="" style="width:0px;height:0px;border:0"></iframe>
+<div id='uploadarea'><p><img src=http://49video.resources.s3.amazonaws.com/loading.gif width=16 height=16>  Loading <a href=http://www.uploadthingy.com>Uploadthingy file upload form</a>... <br><br>If your upload form doesn't display within a few seconds, please check the <a href=http://www.uploadthingy.com/faq.html>FAQ</a> or contact us at hello@uploadthingy.com. We'd love to help out!</p></div>
+<script type="text/javascript" language="Javascript">
+var sitecode="YmVwYW50YXN0aWMuY29t";
+uploadcompletehtml="<p>Your upload has successfully completed. Use this code to reference your upload: <$refcode$>.</p> <br> <p>To complete your order, please click on the button below to securely* submit your payment and shipping information.</p><br><h6>*This site uses WePay to collect payment information. WePay uses state-of-the-art cryptographic algorithms during data transmission (HTTPS with RSA 2048 bit key and SHA 256 certificate). Needless to say, your data is safe with us :)</h6>";
+authupload();
+function getUploadForm(json) {
+showblinks=false;
+var h="";
+h+="<p style='color:black;'>Your name: *<br>";
+h+="<input type=text style='width: 95%;' id='uploader_name' name='uploader_name'></p>";
+h+="<p style='color:black;'>Your email: *<br>";
+h+="<input type=text style='width: 95%;' id='uploader_company' name='uploader_company'></p>";
+h+="<p style='color:black;'>Panorama:<br>";
+h+="<input type='file' size='40' id='uploadfile0' name='file0'><br>";
+h+="</p>";
+h+="<input type='hidden' id='authcode' name='authcode' value='"+json.c+"'>";
+h+="<input type='hidden' id='uploadid' name='id' value='widget$"+json.d+"$"+json.c.substring(0,json.c.indexOf("_"))+"'>";
+h+="<input type='hidden' id='callbackurl' name='callbackurl' value='"+baseserverurl+"'>";
+h+="<input type='hidden' name='savemeta' value='yes'>";
+h+="<p><input class='btn btn-custom' id='49widget_submitbutton' type='button' onclick='doUpload();' name='suploadvideo' value='Upload'></p>";
+return h;
+}
+function doUpload() { if (checkform()) { upload('start'); } }
+function checkform() { 
+var found=false;
+var cnt=0;
+while (document.getElementById('uploadfile'+cnt)) {
+if (document.getElementById('uploadfile'+cnt).value.length>0) {
+found=true;
+break;
+}
+cnt++;
+}
+if (!found) {
+alert('Please select at least one file to upload.');
+return false;
+}
+if (document.getElementById('uploader_name').value.length==0) {
+alert('Please fill out the field: Your name:.');
+return false;
+}
+if (document.getElementById('uploader_company').value.length==0) {
+alert('Please fill out the field: Your email:.');
+return false;
+}
+uploadmetadata=new Array();
+uploadmetadata['name']=document.getElementById('uploader_name').value;
+uploadmetadata['company']=document.getElementById('uploader_company').value;
+uploadmetadata['uploadfile0']=document.getElementById('uploadfile0').value;
+  return true;
+}
+</script>
+
+<div class="wepaybtn">
+<a class="wepay-widget-button wepay-blue" id="wepay_widget_anchor_50eca380160f4" href="https://www.wepay.com/stores/407125/item/294104"><i class="icon-shopping-cart icon-white"></i> Pay Now</a><script type="text/javascript">var WePay = WePay || {};WePay.load_widgets = WePay.load_widgets || function() { };WePay.widgets = WePay.widgets || [];WePay.widgets.push( {object_id: 294104,widget_type: "store_item_buy_now",anchor_id: "wepay_widget_anchor_50eca380160f4",widget_options: {store_id: 407125,show_item_price: false,show_item_images: true,button_text_sold_out: "Sold Out",show_item_custom_options: true,button_text: "Buy Now"}});if (!WePay.script) {WePay.script = document.createElement('script');WePay.script.type = 'text/javascript';WePay.script.async = true;WePay.script.src = 'https://static.wepay.com/min/js/widgets.v2.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(WePay.script, s);} else if (WePay.load_widgets) {WePay.load_widgets();}</script>
+</div>
+</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+<script src="bootstrap/js/bootstrap.min.js"></script>  
+
+
+
+
+  </body>
+</html>
