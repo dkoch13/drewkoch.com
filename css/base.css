@@ -116,17 +116,14 @@
 	  -webkit-transition: all .5s linear;
 		transition: all .5s linear; }
 
-	.button.dark,
-	button.dark,
-	input[type="submit"].dark,
-	input[type="reset"].dark,
-	input[type="button"].dark {
-		background-color: rgba(0,0,0,0.3);
-		padding: 17px 40px;
-		border: 3px solid #fff;
-		border-radius: 30px;
+	.button.link,
+	button.link,
+	input[type="submit"].link,
+	input[type="reset"].link,
+	input[type="button"].link {
+		border: none;
 		color: white;
-		font-size: 1.1em;
+		font-size: 1.3em;
 		font-weight: 500;
 	  font-family: 'Open Sans', sans-serif;
 	  -webkit-transition: all .5s linear;
@@ -141,12 +138,13 @@
 		-webkit-transition: all .5s linear;
 		transition: all .5s linear; }
 
-	.button.dark:hover,
-	button.dark:hover,
-	input[type="submit"].dark:hover,
-	input[type="reset"].dark:hover,
-	input[type="button"].dark:hover {
-		background-color: rgba(0,0,0,0.5);
+	.button.link:hover,
+	button.link:hover,
+	input[type="submit"].link:hover,
+	input[type="reset"].link:hover,
+	input[type="button"].link:hover {
+		color: #ccc;
+		background-color: rgba(0,0,0,0);
 		-webkit-transition: all .5s linear;
 		transition: all .5s linear; }
 
