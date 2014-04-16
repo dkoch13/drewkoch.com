@@ -23,3 +23,44 @@ $("#reveal-pantastic").click(function() {
   $("section.pantastic #fadeOut").hide();
   $("#reveal-pantastic").hide();
 });
+
+$("#section-1-scroll").click(function() {
+  $('html, body').animate({
+    scrollTop:$("#section-1").offset().top
+  }, 1000);
+});
+
+$("#section-2-scroll").click(function() {
+  $('html, body').animate({
+    scrollTop:$("#section-2").offset().top
+  }, 1000);
+});
+
+$("#section-3-scroll").click(function() {
+  $('html, body').animate({
+    scrollTop:$("#section-3").offset().top
+  }, 1000);
+});
+
+$("#section-4-scroll").click(function() {
+  $('html, body').animate({
+    scrollTop:$("#section-4").offset().top
+  }, 1000);
+});
+
+
+function sectionNavShow () {
+  // $("#scroll").click(function() {
+  //   $("#section-nav").fadeIn();
+  // });
+  var topOfOthDiv = ( $("main").offset().top - 100);
+  $(window).scroll(function() {
+      if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+          $("#section-nav").fadeIn(); //reached the desired point -- show div
+      } else {
+        $("#section-nav").fadeOut();
+      }
+  });
+};
+
+sectionNavShow();
