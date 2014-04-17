@@ -1,4 +1,9 @@
 @import 'bourbon/bourbon';
+@import 'neat/neat';
+
+$mobile: new-breakpoint(max-width em(320));
+$tablet: new-breakpoint(max-width em(760) min-width em(321));
+$desktop: new-breakpoint(min-width em(761));
 
 body, html {
   height: 100%;
@@ -7,6 +12,17 @@ body, html {
 header {
   width: 100%;
   height: 100%;
+  @include media($mobile) {
+    height: auto;
+    h1 {
+      font-size: em(36);
+      line-height: em(25);
+    }
+    h2 {
+      font-size: em(25);
+      line-height: em(25);
+    }
+  }
   text-align: center;
   @include linear-gradient(to right, #20467A, #3B7FDB);
   .animated {
@@ -15,25 +31,19 @@ header {
   }
   .greeting {
     padding: 10% em(50);
+    @include media($mobile) {
+      padding-left: em(13);
+      padding-right: em(13);
+    }
     img {
       width: em(150);
       height: em(150);
+      @include media($mobile) {
+        width: em(100);
+        height: em(100);
+      }
       border-radius: 50%;
       border: 3px solid #fff;
-    }
-    .social {
-      margin-top: em(100);
-      a {
-        color: white;
-        padding: 0 10px;
-        -webkit-transition: all .5s linear;
-        transition: all .5s linear;
-        &:hover {
-          color: #55acee;
-          -webkit-transition: all .5s linear;
-          transition: all .5s linear;
-        }
-      }
     }
   }
   nav {
@@ -41,8 +51,14 @@ header {
     bottom: em(50);
     width: 100%;
     text-align: center;
+    @include media($mobile) {
+      position: relative;
+    }
     button {
       width: em(240);
+      @include media($mobile) {
+        margin-top: em(60);
+      }
       &:before {
         content: "Wanna see my stuff?";
       }
@@ -55,19 +71,56 @@ header {
 
 main {
   section {
-    height: calc(100vh - 6.25em);
+    height: 100vh;
     overflow: hidden;
     text-align: left;
     padding: em(50) 20%;
+    @include media($mobile) {
+      height: auto;
+      padding: em(10) em(25);
+      h1 {
+        font-size: em(30);
+      }
+      h2 {
+        font-size: em(24);
+        line-height: em(24);
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      h3 {
+        font-size: em(20);
+        line-height: em(24);
+        margin-top: em(5);
+        margin-bottom: 0;
+      }
+      .tag {
+        font-size: em(10);
+        padding: 0 em(10);
+        line-height: 2.3em;
+        margin: em(3);
+      }
+      .fadeout {
+        display: none;
+      }
+      .reveal {
+        display: none;
+      }
+      .screenshots {
+        display: none;
+      }
+    }
     position: relative;
-    // -webkit-transition: all 6s linear;
-    // transition: all 6s linear;
+
     h1 {
       font-weight: 400;
     }
     article {
       margin-top: em(50);
       text-align: center;
+      @include media($mobile) {
+        margin-top: em(10);
+        text-align: left;
+      }
       p {
         text-align: left;
         font-size: em(20);
@@ -76,6 +129,10 @@ main {
         color: #fff;
         &:not(:first-child) {
           padding-top: em(20);
+        }
+        @include media($mobile) {
+          font-size: em(15);
+          line-height: em(25);
         }
       }
       img {
@@ -91,6 +148,11 @@ main {
       img.code {
         max-width: 80%;
         box-shadow: 0 0 3px #383838;
+      }
+      @include media($mobile) {
+        .process {
+          display: none;
+        }
       }
       figure {
         width: 100%;
@@ -154,17 +216,30 @@ main {
       height: auto;
       overflow: visible;
       background-color: tomato;
-      text-align: center;
+      text-align: left;
       h1 {
         text-align: left;
       }
-      .browser {
-        width: 344px; //add media queries here
-        margin-left: 2.5%;
-        margin-right: 2.5%;
+      @include media($desktop) {
+        a.browser {
+          margin: em(15) 0;
+        }
+        figure {
+          width: 40%;
+          margin-right: 5%;
+          display: inline-block;
+        }
+        figcaption {
+          text-align: left;
+        }
+        .simpleform img {
+          display: none;
+        }
       }
-      a:hover {
-
+      @include media($mobile) {
+        .simpleform video {
+          display: none;
+        }
       }
     }
   }
@@ -185,9 +260,13 @@ main {
 
 .browser {
   position: relative;
-  width: 683.25px;
+  width: 100%;
+  @include media($mobile) {
+    width: 100%;
+    min-height: 0;
+    margin: em(15) 0;
+  }
   margin: em(20) 0;
-  min-height: 220px;
   padding-top: 24px;
   background: #96a0a2;
   border-radius: 3px;
@@ -253,22 +332,34 @@ main {
     width: em(150);
     font-weight: 400;
     border-color: rgba(255,255,255,0.6);
+    @include media($mobile) {
+      display: none;
+    }
   }
   .vertical-line-short {
     border-left: 2px dotted rgba(255,255,255,0.3);
     height: em(50);
     margin-left: em(100);
+    @include media($mobile) {
+      display: none;
+    }
   }
   .vertical-line-tall {
     border-left: 2px dotted rgba(255,255,255,0.3);
     height: em(100);
     margin-left: em(100);
+    @include media($mobile) {
+      display: none;
+    }
   }
 }
 
 footer {
   width: 100%;
   padding: em(50) 0;
+  @include media($mobile) {
+    padding: em(10) 0;
+  }
   text-align: center;
   @include linear-gradient(to right, #20467A, #3B7FDB);
   a {
@@ -284,5 +375,9 @@ footer {
 
   .fa {
     color: white;
+    font-size: 3em;
+    @include media($mobile) {
+      font-size: 2em;
+    }
   }
 }

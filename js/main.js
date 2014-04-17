@@ -1,13 +1,14 @@
 $("#scroll").click(function() {
   $('html, body').animate({
-    scrollTop: window.innerHeight}, 800);
+      scrollTop:$("#section-1").offset().top
+    }, 1000);
 });
 
 function reveal(button, anchor) {
   $(button).click(function() {
   var newHeight = $(anchor)[0].scrollHeight;
   $(anchor).css("height", newHeight);
-  $(anchor + " fadeOut").hide();
+  $(anchor + " .fadeout").hide();
   $(button).hide();
   $('html, body').animate({
       scrollTop: $(window).scrollTop() + 400

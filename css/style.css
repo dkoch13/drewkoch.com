@@ -1,3 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body, html {
   height: 100%;
 }
@@ -11,6 +17,19 @@ header {
   background-image: -webkit-linear-gradient(left, #20467a, #3b7fdb);
   background-image: linear-gradient(to right,#20467a, #3b7fdb);
 }
+@media screen and (max-width: 20em) {
+  header {
+    height: auto;
+  }
+  header h1 {
+    font-size: 2.25em;
+    line-height: 1.5625em;
+  }
+  header h2 {
+    font-size: 1.5625em;
+    line-height: 1.5625em;
+  }
+}
 header .animated {
   -webkit-animation-duration: 5s;
   animation-duration: 5s;
@@ -18,25 +37,23 @@ header .animated {
 header .greeting {
   padding: 10% 3.125em;
 }
+@media screen and (max-width: 20em) {
+  header .greeting {
+    padding-left: 0.8125em;
+    padding-right: 0.8125em;
+  }
+}
 header .greeting img {
   width: 9.375em;
   height: 9.375em;
   border-radius: 50%;
   border: 3px solid #fff;
 }
-header .greeting .social {
-  margin-top: 6.25em;
-}
-header .greeting .social a {
-  color: white;
-  padding: 0 10px;
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
-}
-header .greeting .social a:hover {
-  color: #55acee;
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
+@media screen and (max-width: 20em) {
+  header .greeting img {
+    width: 6.25em;
+    height: 6.25em;
+  }
 }
 header nav {
   position: absolute;
@@ -44,8 +61,18 @@ header nav {
   width: 100%;
   text-align: center;
 }
+@media screen and (max-width: 20em) {
+  header nav {
+    position: relative;
+  }
+}
 header nav button {
   width: 15em;
+}
+@media screen and (max-width: 20em) {
+  header nav button {
+    margin-top: 3.75em;
+  }
 }
 header nav button:before {
   content: "Wanna see my stuff?";
@@ -55,11 +82,47 @@ header nav button:hover:before {
 }
 
 main section {
-  height: calc(100vh - 6.25em);
+  height: 100vh;
   overflow: hidden;
   text-align: left;
   padding: 3.125em 20%;
   position: relative;
+}
+@media screen and (max-width: 20em) {
+  main section {
+    height: auto;
+    padding: 0.625em 1.5625em;
+  }
+  main section h1 {
+    font-size: 1.875em;
+  }
+  main section h2 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  main section h3 {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin-top: 0.3125em;
+    margin-bottom: 0;
+  }
+  main section .tag {
+    font-size: 0.625em;
+    padding: 0 0.625em;
+    line-height: 2.3em;
+    margin: 0.1875em;
+  }
+  main section .fadeout {
+    display: none;
+  }
+  main section .reveal {
+    display: none;
+  }
+  main section .screenshots {
+    display: none;
+  }
 }
 main section h1 {
   font-weight: 400;
@@ -67,6 +130,12 @@ main section h1 {
 main section article {
   margin-top: 3.125em;
   text-align: center;
+}
+@media screen and (max-width: 20em) {
+  main section article {
+    margin-top: 0.625em;
+    text-align: left;
+  }
 }
 main section article p {
   text-align: left;
@@ -77,6 +146,12 @@ main section article p {
 }
 main section article p:not(:first-child) {
   padding-top: 1.25em;
+}
+@media screen and (max-width: 20em) {
+  main section article p {
+    font-size: 0.9375em;
+    line-height: 1.5625em;
+  }
 }
 main section article img {
   margin: 1.875em 0;
@@ -91,6 +166,11 @@ main section article img.userflow {
 main section article img.code {
   max-width: 80%;
   box-shadow: 0 0 3px #383838;
+}
+@media screen and (max-width: 20em) {
+  main section article .process {
+    display: none;
+  }
 }
 main section article figure {
   width: 100%;
@@ -133,15 +213,31 @@ main section.other {
   height: auto;
   overflow: visible;
   background-color: tomato;
-  text-align: center;
+  text-align: left;
 }
 main section.other h1 {
   text-align: left;
 }
-main section.other .browser {
-  width: 344px;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+@media screen and (min-width: 47.5625em) {
+  main section.other a.browser {
+    margin: 0.9375em 0;
+  }
+  main section.other figure {
+    width: 40%;
+    margin-right: 5%;
+    display: inline-block;
+  }
+  main section.other figcaption {
+    text-align: left;
+  }
+  main section.other .simpleform img {
+    display: none;
+  }
+}
+@media screen and (max-width: 20em) {
+  main section.other .simpleform video {
+    display: none;
+  }
 }
 
 .reveal {
@@ -158,9 +254,8 @@ main section.other .browser {
 
 .browser {
   position: relative;
-  width: 683.25px;
+  width: 100%;
   margin: 1.25em 0;
-  min-height: 220px;
   padding-top: 24px;
   background: #96a0a2;
   border-radius: 3px;
@@ -172,6 +267,13 @@ main section.other .browser {
   padding: 30px 10px;
   text-align: center;
   color: #ccc;
+}
+@media screen and (max-width: 20em) {
+  .browser {
+    width: 100%;
+    min-height: 0;
+    margin: 0.9375em 0;
+  }
 }
 
 .browser:after,
@@ -232,15 +334,30 @@ main section.other .browser {
   font-weight: 400;
   border-color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 20em) {
+  .section-nav button {
+    display: none;
+  }
+}
 .section-nav .vertical-line-short {
   border-left: 2px dotted rgba(255, 255, 255, 0.3);
   height: 3.125em;
   margin-left: 6.25em;
 }
+@media screen and (max-width: 20em) {
+  .section-nav .vertical-line-short {
+    display: none;
+  }
+}
 .section-nav .vertical-line-tall {
   border-left: 2px dotted rgba(255, 255, 255, 0.3);
   height: 6.25em;
   margin-left: 6.25em;
+}
+@media screen and (max-width: 20em) {
+  .section-nav .vertical-line-tall {
+    display: none;
+  }
 }
 
 footer {
@@ -251,6 +368,11 @@ footer {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #20467a), color-stop(100%, #3b7fdb));
   background-image: -webkit-linear-gradient(left, #20467a, #3b7fdb);
   background-image: linear-gradient(to right,#20467a, #3b7fdb);
+}
+@media screen and (max-width: 20em) {
+  footer {
+    padding: 0.625em 0;
+  }
 }
 footer a {
   margin: 1.875em 0.625em;
@@ -264,4 +386,10 @@ footer a:hover {
 }
 footer .fa {
   color: white;
+  font-size: 3em;
+}
+@media screen and (max-width: 20em) {
+  footer .fa {
+    font-size: 2em;
+  }
 }
