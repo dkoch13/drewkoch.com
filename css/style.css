@@ -31,8 +31,8 @@ header {
   }
 }
 header .animated {
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 header .greeting {
   padding: 10% 3.125em;
@@ -183,14 +183,18 @@ main section article p:not(:first-child) {
 main section article img {
   margin: 1.875em 0;
 }
-main section article img.styletile {
-  max-width: 50%;
-  box-shadow: 0 0 3px #383838;
+main section article figure {
+  margin-bottom: 1.875em;
 }
-main section article img.userflow {
+main section article .styletile, main section article .wireframe {
+  max-width: 80%;
+  box-shadow: 0 0 3px #383838;
+  margin-bottom: 0.3125em;
+}
+main section article .userflow {
   max-width: 80%;
 }
-main section article img.code {
+main section article .code {
   max-width: 80%;
   box-shadow: 0 0 3px #383838;
 }
@@ -198,10 +202,6 @@ main section article img.code {
   main section article .process {
     display: none;
   }
-}
-main section article figure {
-  width: 100%;
-  text-align: center;
 }
 main section.farmplicity {
   background-color: #2CBF53;

@@ -26,8 +26,8 @@ header {
   text-align: center;
   @include linear-gradient(to right, #20467A, #3B7FDB);
   .animated {
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
   }
   .greeting {
     padding: 10% em(50);
@@ -163,14 +163,19 @@ main {
       img {
         margin: em(30) 0;
       }
-      img.styletile {
-        max-width: 50%;
-        box-shadow: 0 0 3px #383838;
+      figure {
+        margin-bottom: em(30);
       }
-      img.userflow {
+
+      .styletile, .wireframe {
+        max-width: 80%;
+        box-shadow: 0 0 3px #383838;
+        margin-bottom: em(5);
+      }
+      .userflow {
         max-width: 80%;
       }
-      img.code {
+      .code {
         max-width: 80%;
         box-shadow: 0 0 3px #383838;
       }
@@ -178,10 +183,6 @@ main {
         .process {
           display: none;
         }
-      }
-      figure {
-        width: 100%;
-        text-align: center;
       }
     }
 
