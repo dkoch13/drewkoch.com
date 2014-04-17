@@ -1,9 +1,9 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
-$mobile: new-breakpoint(max-width em(320));
-$tablet: new-breakpoint(max-width em(760) min-width em(321));
-$desktop: new-breakpoint(min-width em(761));
+$mobile: new-breakpoint(max-width em(767));
+$tablet: new-breakpoint(max-width em(768) min-width em(959));
+$desktop: new-breakpoint(min-width em(960));
 
 body, html {
   height: 100%;

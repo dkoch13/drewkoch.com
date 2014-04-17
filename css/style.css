@@ -17,7 +17,7 @@ header {
   background-image: -webkit-linear-gradient(left, #20467a, #3b7fdb);
   background-image: linear-gradient(to right,#20467a, #3b7fdb);
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   header {
     height: auto;
   }
@@ -37,7 +37,7 @@ header .animated {
 header .greeting {
   padding: 10% 3.125em;
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   header .greeting {
     padding-left: 0.8125em;
     padding-right: 0.8125em;
@@ -49,7 +49,7 @@ header .greeting img {
   border-radius: 50%;
   border: 3px solid #fff;
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   header .greeting img {
     width: 6.25em;
     height: 6.25em;
@@ -61,7 +61,7 @@ header nav {
   width: 100%;
   text-align: center;
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   header nav {
     position: relative;
   }
@@ -69,7 +69,7 @@ header nav {
 header nav button {
   width: 15em;
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   header nav button {
     margin-top: 3.75em;
   }
@@ -88,7 +88,7 @@ main section {
   padding: 3.125em 20%;
   position: relative;
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   main section {
     height: auto;
     padding: 0.625em 1.5625em;
@@ -131,7 +131,7 @@ main section article {
   margin-top: 3.125em;
   text-align: center;
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   main section article {
     margin-top: 0.625em;
     text-align: left;
@@ -147,7 +147,7 @@ main section article p {
 main section article p:not(:first-child) {
   padding-top: 1.25em;
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   main section article p {
     font-size: 0.9375em;
     line-height: 1.5625em;
@@ -167,7 +167,7 @@ main section article img.code {
   max-width: 80%;
   box-shadow: 0 0 3px #383838;
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   main section article .process {
     display: none;
   }
@@ -218,7 +218,7 @@ main section.other {
 main section.other h1 {
   text-align: left;
 }
-@media screen and (min-width: 47.5625em) {
+@media screen and (min-width: 60em) {
   main section.other a.browser {
     margin: 0.9375em 0;
   }
@@ -234,7 +234,7 @@ main section.other h1 {
     display: none;
   }
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   main section.other .simpleform video {
     display: none;
   }
@@ -268,7 +268,7 @@ main section.other h1 {
   text-align: center;
   color: #ccc;
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   .browser {
     width: 100%;
     min-height: 0;
@@ -334,7 +334,7 @@ main section.other h1 {
   font-weight: 400;
   border-color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   .section-nav button {
     display: none;
   }
@@ -344,7 +344,7 @@ main section.other h1 {
   height: 3.125em;
   margin-left: 6.25em;
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   .section-nav .vertical-line-short {
     display: none;
   }
@@ -354,7 +354,7 @@ main section.other h1 {
   height: 6.25em;
   margin-left: 6.25em;
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   .section-nav .vertical-line-tall {
     display: none;
   }
@@ -369,7 +369,7 @@ footer {
   background-image: -webkit-linear-gradient(left, #20467a, #3b7fdb);
   background-image: linear-gradient(to right,#20467a, #3b7fdb);
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   footer {
     padding: 0.625em 0;
   }
@@ -388,7 +388,7 @@ footer .fa {
   color: white;
   font-size: 3em;
 }
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 47.9375em) {
   footer .fa {
     font-size: 2em;
   }
