@@ -2,7 +2,7 @@
 @import 'neat/neat';
 
 $mobile: new-breakpoint(max-width em(767));
-$tablet: new-breakpoint(max-width em(768) min-width em(959));
+$tablet: new-breakpoint(min-width em(768) max-width em(959));
 $desktop: new-breakpoint(min-width em(960));
 
 body, html {
@@ -107,6 +107,31 @@ main {
       }
       .screenshots {
         display: none;
+      }
+    }
+    @include media($tablet) {
+      height: em(700);
+      padding: em(30) 10%;
+      h1 {
+        font-size: em(36);
+      }
+      h2 {
+        font-size: em(28);
+        line-height: em(28);
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      h3 {
+        font-size: em(24);
+        line-height: em(28);
+        margin-top: em(5);
+        margin-bottom: 0;
+      }
+      .tag {
+        font-size: em(10);
+        padding: 0 em(10);
+        line-height: 2.3em;
+        margin: em(3);
       }
     }
     position: relative;
@@ -241,6 +266,11 @@ main {
           display: none;
         }
       }
+      @include media($tablet) {
+        .simpleform video {
+          display: none;
+        }
+      }
     }
   }
 
@@ -250,6 +280,10 @@ main {
   position: absolute;
   bottom: em(60);
   margin-left: 20%;
+  @include media($tablet) {
+    margin-left: 25%;
+    bottom: em(30);
+  }
   font-weight: 600;
   font-size: em(20);
 }
@@ -322,17 +356,20 @@ main {
 .section-nav {
   position: fixed;
   top: 18%;
-  right: 5%;
+  right: 3%;
   z-index: 10;
   width: em(200);
   text-align: center;
   display: none;
   button {
     padding: 10px 20px;
-    width: em(150);
+    width: em(130);
     font-weight: 400;
     border-color: rgba(255,255,255,0.6);
     @include media($mobile) {
+      display: none;
+    }
+    @include media($tablet) {
       display: none;
     }
   }
@@ -343,12 +380,18 @@ main {
     @include media($mobile) {
       display: none;
     }
+    @include media($tablet) {
+      display: none;
+    }
   }
   .vertical-line-tall {
     border-left: 2px dotted rgba(255,255,255,0.3);
     height: em(100);
     margin-left: em(100);
     @include media($mobile) {
+      display: none;
+    }
+    @include media($tablet) {
       display: none;
     }
   }
