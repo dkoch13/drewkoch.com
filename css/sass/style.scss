@@ -253,6 +253,9 @@ main {
           width: 40%;
           margin-right: 5%;
           display: inline-block;
+          &:hover {
+            opacity: 0.9;
+          }
         }
         figcaption {
           text-align: left;

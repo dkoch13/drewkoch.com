@@ -254,6 +254,9 @@ main section.other h1 {
     margin-right: 5%;
     display: inline-block;
   }
+  main section.other figure:hover {
+    opacity: 0.9;
+  }
   main section.other figcaption {
     text-align: left;
   }
