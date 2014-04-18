@@ -1,7 +1,8 @@
-$("#scroll").click(function() {
+$("#scroll").click(function(e) {
+  e.preventDefault();
   $('html, body').animate({
       scrollTop:$("#section-1").offset().top
-    }, 1000);
+    }, 600);
 });
 
 function reveal(button, anchor) {
@@ -22,34 +23,39 @@ reveal("#reveal-voyager", "section.voyager");
 
 reveal("#reveal-pantastic", "section.pantastic");
 
-$("#section-1-scroll").click(function() {
+$("#section-1-scroll").click(function(e) {
+  e.preventDefault();
   $('html, body').animate({
     scrollTop:$("#section-1").offset().top
-  }, 1000);
+  }, 600);
 });
 
-$("#section-2-scroll").click(function() {
+$("#section-2-scroll").click(function(e) {
+  e.preventDefault();
   $('html, body').animate({
     scrollTop:$("#section-2").offset().top
-  }, 1000);
+  }, 600);
 });
 
-$("#section-3-scroll").click(function() {
+$("#section-3-scroll").click(function(e) {
+  e.preventDefault();
   $('html, body').animate({
     scrollTop:$("#section-3").offset().top
-  }, 1000);
+  }, 600);
 });
 
-$("#section-4-scroll").click(function() {
+$("#section-4-scroll").click(function(e) {
+  e.preventDefault();
   $('html, body').animate({
     scrollTop:$("#section-4").offset().top
-  }, 1000);
+  }, 600);
 });
 
-$("#section-5-scroll").click(function() {
+$("#section-5-scroll").click(function(e) {
+  e.preventDefault();
   $('html, body').animate({
     scrollTop:$("footer").offset().top
-  }, 1000);
+  }, 600);
 });
 
 
