@@ -165,6 +165,12 @@ main {
       }
       figure {
         margin-bottom: em(30);
+        @include media($mobile) {
+          margin-bottom: 0;
+        };
+        @include media($tablet) {
+          margin-bottom: em(15);
+        };
       }
 
       .styletile, .wireframe {

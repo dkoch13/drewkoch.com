@@ -7,21 +7,22 @@ $("#scroll").click(function(e) {
 
 function reveal(button, anchor) {
   $(button).click(function() {
-  var newHeight = $(anchor)[0].scrollHeight;
-  $(anchor).css("height", newHeight);
-  $(anchor + " .fadeout").hide();
-  $(button).hide();
-  $('html, body').animate({
-      scrollTop: $(window).scrollTop() + 400
-  }, 600);
+    var newHeight = $(anchor)[0].scrollHeight;
+    var figure = anchor + " #teaser-figure";
+    $(anchor).css("height", newHeight);
+    $(anchor + " .fadeout").hide();
+    $(button).hide();
+    $('html, body').animate({
+        scrollTop: $(figure).offset().top
+    }, 600);
   });
 };
 
-reveal("#reveal-farmplicity", "section.farmplicity");
+reveal("#reveal-farmplicity", "#section-1");
 
-reveal("#reveal-voyager", "section.voyager");
+reveal("#reveal-voyager", "#section-2");
 
-reveal("#reveal-pantastic", "section.pantastic");
+reveal("#reveal-pantastic", "#section-3");
 
 $("#section-1-scroll").click(function(e) {
   e.preventDefault();

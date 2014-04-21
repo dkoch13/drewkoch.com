@@ -186,6 +186,16 @@ main section article img {
 main section article figure {
   margin-bottom: 1.875em;
 }
+@media screen and (max-width: 47.9375em) {
+  main section article figure {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 48em) and (max-width: 59.9375em) {
+  main section article figure {
+    margin-bottom: 0.9375em;
+  }
+}
 main section article .styletile, main section article .wireframe {
   max-width: 80%;
   box-shadow: 0 0 3px #383838;
