@@ -178,9 +178,31 @@ main {
         box-shadow: 0 0 3px #383838;
         margin-bottom: em(5);
       }
-      .userflow {
-        max-width: 80%;
+
+      .magnify {
+         position: relative;
+         .small {
+          max-width: 80%;
+         }
+        .large {
+          width: 175px; height: 175px;
+          position: absolute;
+          border-radius: 100%;
+
+          /*Multiple box shadows to achieve the glass effect*/
+          box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+          0 0 7px 7px rgba(0, 0, 0, 0.25),
+          inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+
+          /*Lets load up the large image first*/
+          background: url('../img/userflow-farmplicity.png') no-repeat;
+          background-size: 4500px;
+
+          /*hide the glass by default*/
+          display: none;
+        };
       }
+
       .code {
         max-width: 80%;
         box-shadow: 0 0 3px #383838;
