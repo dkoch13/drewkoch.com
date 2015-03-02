@@ -55,7 +55,7 @@ header {
       position: relative;
     }
     button {
-      width: em(240);
+      width: 15.3em;
       @include media($mobile) {
         margin-top: em(60);
       }
@@ -146,6 +146,17 @@ main {
         margin-top: em(10);
         text-align: left;
       }
+			h1, h2, h3 {
+				text-align: left;
+			}
+			figcaption {
+				text-align: left;
+				margin-top: em(10);
+			}
+
+			figcaption {
+				padding-left: em(95);
+			}
       p {
         text-align: left;
         font-size: em(20);
@@ -161,22 +172,25 @@ main {
         }
       }
       img {
-        margin: em(30) 0;
+        margin-top: em(30);
       }
       figure {
-        margin-bottom: em(30);
+        margin: em(70) 0;
+				&#teaser-figure {
+					margin: 0;
+					margin-bottom: em(30);
+				}
         @include media($mobile) {
-          margin-bottom: 0;
+          margin: 0;
         };
         @include media($tablet) {
-          margin-bottom: em(15);
+          margin: em(15) 0;
         };
       }
 
       .styletile, .wireframe {
         max-width: 80%;
         box-shadow: 0 0 3px #383838;
-        margin-bottom: em(5);
       }
       .userflow {
         max-width: 80%;
@@ -191,13 +205,45 @@ main {
         }
       }
     }
+		&.amazon {
+			// @include linear-gradient(to right, #30A64F, #30D95D);
+			$amazon-color: #cc9b3b;
 
+			background-color: $amazon-color;
+			.fadeout {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: em(300);
+				width: 100%;
+				background: -webkit-linear-gradient(
+					rgba(255, 255, 255, 0) 0%,
+					$amazon-color 100%
+				);
+				background-image: linear-gradient(
+					rgba(255, 255, 255, 0) 0%,
+					$amazon-color 100%
+				);
+			}
+			figure:last-child {
+				margin-bottom: 0;
+			}
+			figcaption {
+				padding-left: 0;
+			}
+			@include media($mobile) {
+				.main-projects {
+					display: none;
+				}
+			}
+		}
     &.farmplicity {
       // @include linear-gradient(to right, #30A64F, #30D95D);
       background-color: #2CBF53;
       .fadeout {
           position: absolute;
           bottom: 0;
+					left: 0;
           height: em(300);
           width: 100%;
           background: -webkit-linear-gradient(
@@ -215,6 +261,7 @@ main {
       .fadeout {
           position: absolute;
           bottom: 0;
+					left: 0;
           height: em(300);
           width: 100%;
           background: -webkit-linear-gradient(
@@ -228,19 +275,21 @@ main {
       }
     }
     &.pantastic {
-      background-color: #A3972C;
+			$pantastic-color: #403f3f;
+			background-color: $pantastic-color;
       .fadeout {
           position: absolute;
           bottom: 0;
+					left: 0;
           height: em(300);
           width: 100%;
           background: -webkit-linear-gradient(
               rgba(255, 255, 255, 0) 0%,
-              rgba(163, 151, 44, 1) 100%
+							$pantastic-color 100%
           );
           background-image: linear-gradient(
               rgba(255, 255, 255, 0) 0%,
-              rgba(163, 151, 44, 1) 100%
+							$pantastic-color 100%
           );
       }
     }
@@ -266,6 +315,7 @@ main {
         }
         figcaption {
           text-align: left;
+					padding-left: 0;
         }
         .simpleform img {
           display: none;
@@ -308,9 +358,8 @@ main {
   @include media($mobile) {
     width: 100%;
     min-height: 0;
-    margin: em(15) 0;
+    margin-top: em(15);
   }
-  margin: em(20) 0;
   padding-top: 24px;
   background: #96a0a2;
   border-radius: 3px;
@@ -365,7 +414,7 @@ main {
 
 .section-nav {
   position: fixed;
-  top: 18%;
+  top: 15%;
   right: 3%;
   z-index: 10;
   width: em(200);
@@ -373,7 +422,7 @@ main {
   display: none;
   button {
     padding: 10px 20px;
-    width: em(130);
+    width: em(150);
     font-weight: 400;
     border-color: rgba(255,255,255,0.6);
     @include media($mobile) {
